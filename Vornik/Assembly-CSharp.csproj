@@ -67,11 +67,11 @@
     <Compile Include="Assets\Avatar\MovimientoScripts\MoveJoystick.cs" />
     <Compile Include="Assets\Avatar\MovimientoScripts\MoveTeleport.cs" />
     <Compile Include="Assets\Avatar\MovimientoScripts\TeleportMovement.cs" />
-    <Compile Include="Assets\ControllerManager.cs" />
+    <Compile Include="Assets\Proyect_Controller\Scripts\ControllerManager.cs" />
     <Compile Include="Assets\Proyect_Controller\Scripts\Lupa\EfectoLupa.cs" />
     <Compile Include="Assets\Proyect_Controller\Scripts\Postprocesado\DesenfoqueIluminación.cs" />
     <Compile Include="Assets\Proyect_Controller\Scripts\Postprocesado\PostProcessingControl.cs" />
-    <Compile Include="Assets\SubtitleControl.cs" />
+    <Compile Include="Assets\Proyect_Controller\Scripts\SubtitleControl.cs" />
     <Compile Include="Assets\Unity\Oculus\AudioManager\Scenes\Scripts\TestScript.cs" />
     <Compile Include="Assets\Unity\Oculus\AudioManager\Scripts\Audio\AmbienceEmitter.cs" />
     <Compile Include="Assets\Unity\Oculus\AudioManager\Scripts\Audio\AudioManager.cs" />

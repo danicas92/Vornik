@@ -247,18 +247,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 384901147}
-  m_LocalRotation: {x: -0, y: 0.99950176, z: -0, w: -0.031562988}
-  m_LocalPosition: {x: 0, y: 0, z: 1.018}
+  m_LocalRotation: {x: 0, y: 0.9961947, z: -0.08715578, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 2.454}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 418805213}
   m_Father: {fileID: 0}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 183.61699, z: 0}
+  m_LocalEulerAnglesHint: {x: 10, y: 180, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.6955, y: 0.259}
-  m_SizeDelta: {x: 3.449, y: 0.5566}
+  m_AnchoredPosition: {x: -0.218, y: 1.135}
+  m_SizeDelta: {x: 1.3496, y: 0.5566}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &389121370
 GameObject:
@@ -423,12 +423,12 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 0.45
+  m_fontSize: 0.05
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 0.1
-  m_fontSizeMax: 1
+  m_fontSizeMin: 0.03
+  m_fontSizeMax: 0.05
   m_fontStyle: 0
   m_textAlignment: 514
   m_isAlignmentEnumConverted: 1
@@ -634,7 +634,7 @@ PrefabInstance:
     - target: {fileID: 8658617369491392745, guid: 1b100151755636d4a93b23049dc73266,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2955483799392300619, guid: 1b100151755636d4a93b23049dc73266,
         type: 3}
@@ -1270,6 +1270,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 568104696}
+  - {fileID: 2066108059}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1355,8 +1356,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e99860d0b99145479db46a63efabc14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texts: []
-  clips: []
+  texts:
+  - "Sargento Zledic, llev\xE1vamos mucho tiempo esperando esto. Sentimos tenerlo
+    as\xED, pero es m\xE1s seguro para todos"
+  - "Si nos cuenta todo acabaremos pronto, es su decisi\xF3n"
+  - Esto no tiene porque acabar mal, solo asiente o niegue con la cabeza, nosotros
+    haremos las preguntas
+  - "\xBFEra usted el encargado de dar las \xF3rdenes al pelot\xF3n 80?"
+  - "As\xED nos entenderemos mejor, continuaremos poco a poco"
+  - "Veo que quiere ponerlo dif\xEDcil, bien, continuemos"
+  - "Vamos a suministrarle un calmante, as\xED que rel\xE1jese y no cierre los ojos"
+  clips:
+  - {fileID: 8300000, guid: 5d525db2fea5133488f810d1890c81cd, type: 3}
+  - {fileID: 8300000, guid: 5d525db2fea5133488f810d1890c81cd, type: 3}
+  - {fileID: 8300000, guid: 5d525db2fea5133488f810d1890c81cd, type: 3}
+  - {fileID: 8300000, guid: 5d525db2fea5133488f810d1890c81cd, type: 3}
+  - {fileID: 8300000, guid: 5d525db2fea5133488f810d1890c81cd, type: 3}
+  - {fileID: 8300000, guid: 5d525db2fea5133488f810d1890c81cd, type: 3}
+  - {fileID: 8300000, guid: 5d525db2fea5133488f810d1890c81cd, type: 3}
+  interactive: 3
+  action: 0
+  text: {fileID: 418805214}
+  audioSource: {fileID: 2066108058}
 --- !u!1 &1581138559
 GameObject:
   m_ObjectHideFlags: 0
@@ -1660,6 +1681,133 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &2066108057
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2066108059}
+  - component: {fileID: 2066108058}
+  m_Layer: 0
+  m_Name: Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &2066108058
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066108057}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &2066108059
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066108057}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1493138512}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4250252198654160527 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4250252198654160527, guid: aaa34ba66db3c854593c4832b752ad10,
