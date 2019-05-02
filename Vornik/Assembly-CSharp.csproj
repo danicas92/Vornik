@@ -67,6 +67,7 @@
     <Compile Include="Assets\Avatar\MovimientoScripts\MoveJoystick.cs" />
     <Compile Include="Assets\Avatar\MovimientoScripts\MoveTeleport.cs" />
     <Compile Include="Assets\Avatar\MovimientoScripts\TeleportMovement.cs" />
+    <Compile Include="Assets\Desenfoque_Focus.cs" />
     <Compile Include="Assets\Proyect_Controller\Scripts\ControllerManager.cs" />
     <Compile Include="Assets\Proyect_Controller\Scripts\Lupa\EfectoLupa.cs" />
     <Compile Include="Assets\Proyect_Controller\Scripts\Postprocesado\DesenfoqueIluminación.cs" />

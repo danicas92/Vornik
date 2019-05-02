@@ -27,7 +27,7 @@ public class ControllerManager : MonoBehaviour
     {
         yield return new WaitForSeconds(TIMER);
         postProcessingControl.ActivateBlack(false);
-        yield return new WaitForSeconds(TIMER);
+        yield return new WaitForSeconds(TIMER/2);
         postProcessingControl.FocusChange(1);
         yield return new WaitForSeconds(TIMER);
         subtitleControl.ReadLine();

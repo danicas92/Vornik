@@ -45,9 +45,9 @@ public class PostProcessingControl : MonoBehaviour
 
         //Salud
         if (stateDepthOfField == 0)
-            depthOfField.focusDistance.value = Mathf.Lerp(depthOfField.focusDistance.value, DEPTHMIN, velocity * Time.deltaTime);
+            depthOfField.focusDistance.value = Mathf.Lerp(depthOfField.focusDistance.value, DEPTHMIN, velocity*2 * Time.deltaTime);
         else if (stateDepthOfField == 1)
-            depthOfField.focusDistance.value = Mathf.Lerp(depthOfField.focusDistance.value, DEPTHMAX, velocity * Time.deltaTime);
+            depthOfField.focusDistance.value = Mathf.Lerp(depthOfField.focusDistance.value, DEPTHMAX, velocity*2 * Time.deltaTime);
         else
             depthOfField.focusDistance.value = Mathf.Lerp(depthOfField.focusDistance.value, Random.Range(DEPTHMIN,DEPTHMAX/1.5f) , velocity * Time.deltaTime);
 
