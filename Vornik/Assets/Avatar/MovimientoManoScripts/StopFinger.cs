@@ -53,16 +53,17 @@ public class StopFinger : MonoBehaviour {
             }
             else if (multiplyer < multiplyerAnt)//Retrocede
             {
-                if (multiplyer < _maxRotacion && indexAnt.localRotation.z > rotInic.z)
+                Debug.Log(indexAnt.transform.localRotation.z + ":"+ rotInic.normalized.z);
+                if ((_maxRotacion == 0 || multiplyer < _maxRotacion) && indexAnt.transform.localRotation.z < rotInic.normalized.z)
                 {
                     indexAnt.Rotate(0, 0, (-multiplyer + multiplyerAnt) * 50);
                 }
             }
-            multiplyerAnt = multiplyer;
-            if (multiplyer == 0)
+            else if (multiplyer == 0)
             {
                 indexAnt.localRotation = Quaternion.Euler(rotInic);
             }
+            multiplyerAnt = multiplyer;
         }
     }
 

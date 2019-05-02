@@ -18,7 +18,13 @@ public class SubtitleControl : MonoBehaviour
     public AudioSource audioSource;
     int flag;
 
-    
+    ControllerManager controller;
+
+    private void Awake()
+    {
+        controller = GameObject.Find("Controlador").GetComponent<ControllerManager>();
+    }
+
     void Start()
     {
         text.text = "";
@@ -40,6 +46,12 @@ public class SubtitleControl : MonoBehaviour
         }//Accionar interaccion
         else if (flag < texts.Length)
             StartCoroutine(ReadLineSound());
+        else
+        {
+            controller.ActivateTransition();
+            text.text = "";
+        }
+            
 
     }
 

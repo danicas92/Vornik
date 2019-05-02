@@ -33,5 +33,16 @@ public class ControllerManager : MonoBehaviour
         subtitleControl.ReadLine();
         //Subtitulos
     }
-    
+
+    public void ActivateTransition()
+    {
+        StartCoroutine(Transition());
+    }
+
+    IEnumerator Transition()
+    {
+        postProcessingControl.ActivateWhite(false);
+        yield return new WaitForSeconds(TIMER);
+        //Realizar teleport personaje y quitar blanco, Activar movimiento manos
+    }
 }
