@@ -33,14 +33,14 @@ MonoBehaviour:
     value: 1
   gradingMode:
     overrideState: 1
-    value: 0
+    value: 1
   externalLut:
     overrideState: 0
     value: {fileID: 0}
     defaultState: 1
   tonemapper:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: 2
   toneCurveToeStrength:
     overrideState: 0
     value: 0
@@ -86,7 +86,7 @@ MonoBehaviour:
     value: 0
   postExposure:
     overrideState: 1
-    value: 10
+    value: -10
   contrast:
     overrideState: 0
     value: -100
