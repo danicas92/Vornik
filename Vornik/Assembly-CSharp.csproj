@@ -60,8 +60,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Avatar\AgarreObjetosScripts\AgarreMano.cs" />
+    <Compile Include="Assets\Avatar\AgarreObjetosScripts\ControllerCollidersGrab.cs" />
     <Compile Include="Assets\Avatar\AgarreObjetosScripts\GrabbableObjects.cs" />
     <Compile Include="Assets\Avatar\AgarreObjetosScripts\GrabbingHand.cs" />
+    <Compile Include="Assets\Avatar\AgarreObjetosScripts\ObjectGrabber.cs" />
     <Compile Include="Assets\Avatar\AgarreObjetosScripts\PoseProvider.cs" />
     <Compile Include="Assets\Avatar\MovimientoManoScripts\StopFinger.cs" />
     <Compile Include="Assets\Avatar\MovimientoScripts\MoveJoystick.cs" />

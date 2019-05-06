@@ -53,7 +53,6 @@ public class StopFinger : MonoBehaviour {
             }
             else if (multiplyer < multiplyerAnt)//Retrocede
             {
-                Debug.Log(indexAnt.transform.localRotation.z + ":"+ rotInic.normalized.z);
                 if ((_maxRotacion == 0 || multiplyer < _maxRotacion) && indexAnt.transform.localRotation.z < rotInic.normalized.z)
                 {
                     indexAnt.Rotate(0, 0, (-multiplyer + multiplyerAnt) * 50);
@@ -109,5 +108,13 @@ public class StopFinger : MonoBehaviour {
     public void StopThisFinger()
     {
         otherCollided = true;
+    }
+
+    public void Reset()
+    {
+        multiplyerAnt = 0;
+        _maxRotacion = 0;
+        _maxThumb = -0.4f;
+        collisionDetected = false;
     }
 }
