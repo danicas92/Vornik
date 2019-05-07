@@ -14,11 +14,12 @@ public class AgarreMano : MonoBehaviour
     private GameObject _currentObject;
     private Vector3 _lastPosition;
 
+
     void Update()
     {
         if (Input.GetAxis(InputName) <= 0.15f && _currentObject != null)
         {
-            _currentObject.GetComponent<ObjectGrabber>().Throw(transform.position, _lastPosition, transform.rotation);
+            _currentObject.GetComponent<ObjectGrabber>().Throw(transform.position, _lastPosition, transform.rotation, pivot);
             _currentObject = null;
             controllerCollidersGrab.enabled = false;
         }

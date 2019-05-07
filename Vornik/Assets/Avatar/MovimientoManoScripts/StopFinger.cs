@@ -75,6 +75,15 @@ public class StopFinger : MonoBehaviour {
         }
     }
 
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.CompareTag("Grab") && !_isThumb)
+        {
+            collisionDetected = true;
+            _maxRotacion = indexAnt.transform.localRotation.z;
+        }
+    }
+
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.CompareTag("Grab"))
