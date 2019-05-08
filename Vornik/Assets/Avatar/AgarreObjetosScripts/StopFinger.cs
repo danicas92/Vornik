@@ -50,7 +50,6 @@ public class StopFinger : MonoBehaviour {
             {
                 if (!collisionDetected && !otherCollided)
                 {
-                    
                     if (multiplyer - multiplyerAnt < 0.05f) return;
                     indexAnt.Rotate(0, 0, -0.05f * 50);
                     multiplyerAnt += 0.05f;
