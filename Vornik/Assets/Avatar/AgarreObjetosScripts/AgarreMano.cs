@@ -19,9 +19,9 @@ public class AgarreMano : MonoBehaviour
     {
         if (Input.GetAxis(InputName) <= 0.15f && _currentObject != null)
         {
-            _currentObject.GetComponent<ObjectGrabber>().Throw(transform.position, _lastPosition, transform.rotation, pivot);
+            _currentObject.GetComponent<ObjectGrabber>().Throw(transform.position, _lastPosition);
             _currentObject = null;
-            controllerCollidersGrab.enabled = false;
+            //controllerCollidersGrab.enabled = false;
         }
         _lastPosition = transform.position;
     }
@@ -33,7 +33,7 @@ public class AgarreMano : MonoBehaviour
             _currentObject = colliderObject.gameObject;
             _currentObject.GetComponent<ObjectGrabber>().Grab(basePoseProvider,pivot);
             _currentObject.GetComponent<Rigidbody>().useGravity = false;
-            controllerCollidersGrab.enabled = true;
+            //controllerCollidersGrab.enabled = true;
         }
     }
 }
