@@ -334,7 +334,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &376225722
 Light:
   m_ObjectHideFlags: 0
@@ -847,7 +847,7 @@ PrefabInstance:
     - target: {fileID: 8658617369491392745, guid: 1b100151755636d4a93b23049dc73266,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2955483799392300619, guid: 1b100151755636d4a93b23049dc73266,
         type: 3}
@@ -1738,21 +1738,21 @@ MonoBehaviour:
   texts:
   - "Sargento Zledic, llev\xE1vamos mucho tiempo esperando esto. Sentimos tenerlo
     as\xED, pero es m\xE1s seguro para todos"
-  - "Si nos cuenta todo acabaremos pronto, es su decisi\xF3n"
+  - Si nos cuenta todo acabaremos pronto.
   - Esto no tiene porque acabar mal, solo asiente o niegue con la cabeza, nosotros
     haremos las preguntas
   - "\xBFEra usted el encargado de dar las \xF3rdenes al pelot\xF3n 80?"
   - "As\xED nos entenderemos mejor, continuaremos poco a poco"
-  - "Veo que quiere ponerlo dif\xEDcil..."
+  - "Entonces, \xBFQuiere ponerlo dif\xEDcil?"
   - "Vamos a suministrarle un calmante, as\xED que rel\xE1jese y no cierre los ojos"
   clips:
-  - {fileID: 8300000, guid: 5d525db2fea5133488f810d1890c81cd, type: 3}
-  - {fileID: 8300000, guid: 5d525db2fea5133488f810d1890c81cd, type: 3}
-  - {fileID: 8300000, guid: 5d525db2fea5133488f810d1890c81cd, type: 3}
-  - {fileID: 8300000, guid: 5d525db2fea5133488f810d1890c81cd, type: 3}
-  - {fileID: 8300000, guid: 5d525db2fea5133488f810d1890c81cd, type: 3}
-  - {fileID: 8300000, guid: 5d525db2fea5133488f810d1890c81cd, type: 3}
-  - {fileID: 8300000, guid: 5d525db2fea5133488f810d1890c81cd, type: 3}
+  - {fileID: 8300000, guid: 60954bd28a3751f48bb301ef4e326d2e, type: 3}
+  - {fileID: 8300000, guid: 8dc2174dea0592f4694c947752d367fd, type: 3}
+  - {fileID: 8300000, guid: 237d3827a4d06d04ea2c18c54df70292, type: 3}
+  - {fileID: 8300000, guid: 0cc1c2ad07be0fa4e93c68de62fee135, type: 3}
+  - {fileID: 8300000, guid: 87d3282a92e4e524d932935cddafdfe3, type: 3}
+  - {fileID: 8300000, guid: af6196e6c6012134b8bd6051160a5fb0, type: 3}
+  - {fileID: 8300000, guid: 58be681c5caa5204cb8b2a7c290037c5, type: 3}
   interactive: 3
   action: 0
   text: {fileID: 418805214}
@@ -2197,9 +2197,9 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Spatialize: 0
+  Spatialize: 1
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 0
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -2285,7 +2285,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2066108057}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.384, y: 0, z: 0.334}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1493138512}
@@ -2304,11 +2304,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enableSpatialization: 1
-  gain: 20
+  gain: 24
   useInvSqr: 1
   near: 0.1
-  far: 10
-  volumetricRadius: 0
+  far: 50
+  volumetricRadius: 0.4
   reverbSend: 0
   enableRfl: 1
 --- !u!95 &7588376507064034297
