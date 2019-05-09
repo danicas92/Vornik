@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Phase_1.unity
+    guid: 99dafda81bfcd494bafc2e94fef300bb
+  - enabled: 1
+    path: Assets/Scenes/Team cinematic/TeamCinematic.unity
+    guid: 5dcdb260d0accca44b84dbc972021df9
   m_configObjects: {}
