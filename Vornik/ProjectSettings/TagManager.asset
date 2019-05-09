@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Grab
   - Index
+  - CollisionFingers
+  - Ball
   layers:
   - Default
   - TransparentFX

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4593659446195968830}
   - component: {fileID: 6161364288914134638}
-  - component: {fileID: 6161364288914133394}
+  - component: {fileID: 5638426856569757083}
   m_Layer: 0
   m_Name: hands:b_r_pinky3
   m_TagString: Untagged
@@ -46,7 +46,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.02
   m_Center: {x: 0, y: 0.02, z: 0}
---- !u!114 &6161364288914133394
+--- !u!114 &5638426856569757083
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -55,13 +55,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 4590026367529576164}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c8112511f0b22a42b326598c49de183, type: 3}
+  m_Script: {fileID: 11500000, guid: ed8b5dee9e3d60242aa8ec106e5bd49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   indexAnt: {fileID: 4593442113388037100}
   triggerButton: Oculus_CrossPlatform_SecondaryHandTrigger
   fingersAnt:
-  - {fileID: 6161364288914133393}
+  - {fileID: 3141035085579917786}
   _isThumb: 0
 --- !u!1 &4590028743713225258
 GameObject:
@@ -73,7 +73,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4593365322313133634}
   - component: {fileID: 6161364288914133401}
-  - component: {fileID: 6161364288914133405}
+  - component: {fileID: 1226914454289782158}
   m_Layer: 0
   m_Name: hands:b_r_ring_ignore
   m_TagString: Untagged
@@ -108,7 +108,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.02
   m_Center: {x: 0, y: 0.02, z: 0}
---- !u!114 &6161364288914133405
+--- !u!114 &1226914454289782158
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -117,14 +117,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 4590028743713225258}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c8112511f0b22a42b326598c49de183, type: 3}
+  m_Script: {fileID: 11500000, guid: ed8b5dee9e3d60242aa8ec106e5bd49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   indexAnt: {fileID: 4584983502974111586}
   triggerButton: Oculus_CrossPlatform_SecondaryHandTrigger
   fingersAnt:
-  - {fileID: 6161364288914133403}
-  - {fileID: 6161364288914133404}
+  - {fileID: 2250598254923783497}
+  - {fileID: 1515993836925887309}
   _isThumb: 0
 --- !u!1 &4590073860792387242
 GameObject:
@@ -166,7 +166,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4584983502974111586}
   - component: {fileID: 6161364288914133400}
-  - component: {fileID: 6161364288914133404}
+  - component: {fileID: 1515993836925887309}
   m_Layer: 0
   m_Name: hands:b_r_ring3
   m_TagString: Untagged
@@ -202,7 +202,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.02
   m_Center: {x: 0, y: 0.02, z: 0}
---- !u!114 &6161364288914133404
+--- !u!114 &1515993836925887309
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -211,13 +211,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 4590076871371092558}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c8112511f0b22a42b326598c49de183, type: 3}
+  m_Script: {fileID: 11500000, guid: ed8b5dee9e3d60242aa8ec106e5bd49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   indexAnt: {fileID: 4585142606259301618}
   triggerButton: Oculus_CrossPlatform_SecondaryHandTrigger
   fingersAnt:
-  - {fileID: 6161364288914133403}
+  - {fileID: 2250598254923783497}
   _isThumb: 0
 --- !u!1 &4590431506251996994
 GameObject:
@@ -229,7 +229,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4585142606259301618}
   - component: {fileID: 6161364288914133402}
-  - component: {fileID: 6161364288914133403}
+  - component: {fileID: 2250598254923783497}
   m_Layer: 0
   m_Name: hands:b_r_ring2
   m_TagString: Untagged
@@ -265,7 +265,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.02
   m_Center: {x: 0, y: 0.02, z: 0}
---- !u!114 &6161364288914133403
+--- !u!114 &2250598254923783497
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -274,7 +274,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4590431506251996994}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c8112511f0b22a42b326598c49de183, type: 3}
+  m_Script: {fileID: 11500000, guid: ed8b5dee9e3d60242aa8ec106e5bd49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   indexAnt: {fileID: 4585098395513280938}
@@ -291,7 +291,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4593513433174176042}
   - component: {fileID: 6161364288914133432}
-  - component: {fileID: 6161364288914133433}
+  - component: {fileID: 5978280067926804066}
   m_Layer: 0
   m_Name: hands:b_r_index2
   m_TagString: Untagged
@@ -327,7 +327,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.02
   m_Center: {x: 0, y: 0.02, z: 0}
---- !u!114 &6161364288914133433
+--- !u!114 &5978280067926804066
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -336,7 +336,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4590433608317677098}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c8112511f0b22a42b326598c49de183, type: 3}
+  m_Script: {fileID: 11500000, guid: ed8b5dee9e3d60242aa8ec106e5bd49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   indexAnt: {fileID: 4585054108803763892}
@@ -384,7 +384,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4593353926854943362}
   - component: {fileID: 6161364288914133396}
-  - component: {fileID: 6161364288914133398}
+  - component: {fileID: 4849596012833265294}
   m_Layer: 0
   m_Name: hands:b_r_thumb3
   m_TagString: Untagged
@@ -420,7 +420,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.02
   m_Center: {x: 0, y: 0.02, z: 0}
---- !u!114 &6161364288914133398
+--- !u!114 &4849596012833265294
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -429,13 +429,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 4590498503922449192}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c8112511f0b22a42b326598c49de183, type: 3}
+  m_Script: {fileID: 11500000, guid: ed8b5dee9e3d60242aa8ec106e5bd49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   indexAnt: {fileID: 4584995683019207246}
   triggerButton: Oculus_CrossPlatform_Button2
   fingersAnt: []
-  _isThumb: 1
+  _isThumb: 0
 --- !u!1 &4590516763498634522
 GameObject:
   m_ObjectHideFlags: 0
@@ -514,7 +514,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4593273009055136544}
   - component: {fileID: 6161364288914133391}
-  - component: {fileID: 6161364288914133427}
+  - component: {fileID: 1174649612137862141}
   m_Layer: 0
   m_Name: hands:b_r_middle_ignore
   m_TagString: Untagged
@@ -549,7 +549,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.02
   m_Center: {x: 0, y: 0.02, z: 0}
---- !u!114 &6161364288914133427
+--- !u!114 &1174649612137862141
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -558,14 +558,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 4590623684035431692}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c8112511f0b22a42b326598c49de183, type: 3}
+  m_Script: {fileID: 11500000, guid: ed8b5dee9e3d60242aa8ec106e5bd49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   indexAnt: {fileID: 4584799161007586840}
   triggerButton: Oculus_CrossPlatform_SecondaryHandTrigger
   fingersAnt:
-  - {fileID: 6161364288914133425}
-  - {fileID: 6161364288914133426}
+  - {fileID: 5509188258734199502}
+  - {fileID: 5616833037583485380}
   _isThumb: 0
 --- !u!1 &4590634177262540488
 GameObject:
@@ -577,7 +577,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4593442113388037100}
   - component: {fileID: 6161364288914133392}
-  - component: {fileID: 6161364288914133393}
+  - component: {fileID: 3141035085579917786}
   m_Layer: 0
   m_Name: hands:b_r_pinky2
   m_TagString: Untagged
@@ -613,7 +613,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.02
   m_Center: {x: 0, y: 0.02, z: 0}
---- !u!114 &6161364288914133393
+--- !u!114 &3141035085579917786
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -622,7 +622,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4590634177262540488}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c8112511f0b22a42b326598c49de183, type: 3}
+  m_Script: {fileID: 11500000, guid: ed8b5dee9e3d60242aa8ec106e5bd49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   indexAnt: {fileID: 4584893084755031556}
@@ -732,7 +732,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4593421213624319482}
   - component: {fileID: 6161364288914133429}
-  - component: {fileID: 6161364288914133431}
+  - component: {fileID: 5435015321075311354}
   m_Layer: 0
   m_Name: hands:b_r_index_ignore
   m_TagString: Untagged
@@ -767,7 +767,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.02
   m_Center: {x: 0, y: 0.02, z: 0}
---- !u!114 &6161364288914133431
+--- !u!114 &5435015321075311354
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -776,14 +776,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 4590713182278732562}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c8112511f0b22a42b326598c49de183, type: 3}
+  m_Script: {fileID: 11500000, guid: ed8b5dee9e3d60242aa8ec106e5bd49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   indexAnt: {fileID: 4584779089211535380}
   triggerButton: Oculus_CrossPlatform_SecondaryIndexTrigger
   fingersAnt:
-  - {fileID: 6161364288914133433}
-  - {fileID: 6161364288914133430}
+  - {fileID: 5978280067926804066}
+  - {fileID: 2208245534446088417}
   _isThumb: 0
 --- !u!1 &4590842417471479512
 GameObject:
@@ -826,7 +826,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4593203112624145624}
   - component: {fileID: 6161364288914133424}
-  - component: {fileID: 6161364288914133425}
+  - component: {fileID: 5616833037583485380}
   m_Layer: 0
   m_Name: hands:b_r_middle2
   m_TagString: Untagged
@@ -862,7 +862,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.02
   m_Center: {x: 0, y: 0.02, z: 0}
---- !u!114 &6161364288914133425
+--- !u!114 &5616833037583485380
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -871,7 +871,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4590855813298934084}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c8112511f0b22a42b326598c49de183, type: 3}
+  m_Script: {fileID: 11500000, guid: ed8b5dee9e3d60242aa8ec106e5bd49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   indexAnt: {fileID: 4593323707714212700}
@@ -950,7 +950,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4584779089211535380}
   - component: {fileID: 6161364288914133428}
-  - component: {fileID: 6161364288914133430}
+  - component: {fileID: 2208245534446088417}
   m_Layer: 0
   m_Name: hands:b_r_index3
   m_TagString: Untagged
@@ -986,7 +986,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.02
   m_Center: {x: 0, y: 0.02, z: 0}
---- !u!114 &6161364288914133430
+--- !u!114 &2208245534446088417
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -995,13 +995,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 4590964401529806678}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c8112511f0b22a42b326598c49de183, type: 3}
+  m_Script: {fileID: 11500000, guid: ed8b5dee9e3d60242aa8ec106e5bd49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   indexAnt: {fileID: 4593513433174176042}
   triggerButton: Oculus_CrossPlatform_SecondaryIndexTrigger
   fingersAnt:
-  - {fileID: 6161364288914133433}
+  - {fileID: 5978280067926804066}
   _isThumb: 0
 --- !u!1 &4591002332994878472
 GameObject:
@@ -1013,7 +1013,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4585110650976115520}
   - component: {fileID: 6161364288914133397}
-  - component: {fileID: 6161364288914133399}
+  - component: {fileID: 554688147860734195}
   m_Layer: 0
   m_Name: hands:b_r_thumb_ignore
   m_TagString: Untagged
@@ -1048,7 +1048,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.02
   m_Center: {x: 0, y: 0.02, z: 0}
---- !u!114 &6161364288914133399
+--- !u!114 &554688147860734195
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1057,14 +1057,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 4591002332994878472}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c8112511f0b22a42b326598c49de183, type: 3}
+  m_Script: {fileID: 11500000, guid: ed8b5dee9e3d60242aa8ec106e5bd49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   indexAnt: {fileID: 4593353926854943362}
   triggerButton: Oculus_CrossPlatform_Button2
   fingersAnt:
-  - {fileID: 6161364288914133398}
-  _isThumb: 1
+  - {fileID: 4849596012833265294}
+  _isThumb: 0
 --- !u!1 &4591004547173584082
 GameObject:
   m_ObjectHideFlags: 0
@@ -1075,7 +1075,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4584799161007586840}
   - component: {fileID: 6161364288914133390}
-  - component: {fileID: 6161364288914133426}
+  - component: {fileID: 5509188258734199502}
   m_Layer: 0
   m_Name: hands:b_r_middle3
   m_TagString: Untagged
@@ -1111,7 +1111,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.02
   m_Center: {x: 0, y: 0.02, z: 0}
---- !u!114 &6161364288914133426
+--- !u!114 &5509188258734199502
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1120,13 +1120,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 4591004547173584082}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c8112511f0b22a42b326598c49de183, type: 3}
+  m_Script: {fileID: 11500000, guid: ed8b5dee9e3d60242aa8ec106e5bd49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   indexAnt: {fileID: 4593203112624145624}
   triggerButton: Oculus_CrossPlatform_SecondaryHandTrigger
   fingersAnt:
-  - {fileID: 6161364288914133425}
+  - {fileID: 5616833037583485380}
   _isThumb: 0
 --- !u!1 &4591019587225091682
 GameObject:
@@ -1151,8 +1151,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4591019587225091682}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.011, z: -0.122}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4584792656550462588}
@@ -1267,7 +1267,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4593125201461493034}
   - component: {fileID: 6161364288914134639}
-  - component: {fileID: 6161364288914133395}
+  - component: {fileID: 2832703650265914508}
   m_Layer: 0
   m_Name: hands:b_r_pinky_ignore
   m_TagString: Untagged
@@ -1302,7 +1302,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.02
   m_Center: {x: 0, y: 0.02, z: 0}
---- !u!114 &6161364288914133395
+--- !u!114 &2832703650265914508
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1311,14 +1311,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 4591339416711187274}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c8112511f0b22a42b326598c49de183, type: 3}
+  m_Script: {fileID: 11500000, guid: ed8b5dee9e3d60242aa8ec106e5bd49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   indexAnt: {fileID: 4593659446195968830}
   triggerButton: Oculus_CrossPlatform_SecondaryHandTrigger
   fingersAnt:
-  - {fileID: 6161364288914133393}
-  - {fileID: 6161364288914133394}
+  - {fileID: 5638426856569757083}
+  - {fileID: 3141035085579917786}
   _isThumb: 0
 --- !u!1 &6161364288184391487
 GameObject:
@@ -1526,7 +1526,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6161364288943054770}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.011, z: -0.122}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6161364289138302577}
@@ -1948,7 +1948,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6165438375452324995}
   - component: {fileID: 6161364289267317908}
-  - component: {fileID: 6161364289267317909}
+  - component: {fileID: 4226544642560563163}
   m_Layer: 0
   m_Name: hands:b_l_thumb3
   m_TagString: Untagged
@@ -1984,7 +1984,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.02
   m_Center: {x: 0, y: 0.02, z: 0}
---- !u!114 &6161364289267317909
+--- !u!114 &4226544642560563163
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1993,13 +1993,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6161522148604245095}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c8112511f0b22a42b326598c49de183, type: 3}
+  m_Script: {fileID: 11500000, guid: ed8b5dee9e3d60242aa8ec106e5bd49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   indexAnt: {fileID: 6165609730046520487}
-  triggerButton: Oculus_CrossPlatform_Button4
+  triggerButton: Oculus_CrossPlatform_Button2
   fingersAnt: []
-  _isThumb: 1
+  _isThumb: 0
 --- !u!1 &6161528138599184111
 GameObject:
   m_ObjectHideFlags: 0
@@ -2047,7 +2047,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6165581699246974183}
   - component: {fileID: 6161364288929288824}
-  - component: {fileID: 6161364288929288825}
+  - component: {fileID: 7843159638286360134}
   m_Layer: 0
   m_Name: hands:b_l_middle3
   m_TagString: Untagged
@@ -2083,7 +2083,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.02
   m_Center: {x: 0, y: 0.02, z: 0}
---- !u!114 &6161364288929288825
+--- !u!114 &7843159638286360134
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2092,13 +2092,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6161575754548070911}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c8112511f0b22a42b326598c49de183, type: 3}
+  m_Script: {fileID: 11500000, guid: ed8b5dee9e3d60242aa8ec106e5bd49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   indexAnt: {fileID: 6165063493381081375}
   triggerButton: Oculus_CrossPlatform_PrimaryHandTrigger
   fingersAnt:
-  - {fileID: 6161364289849451518}
+  - {fileID: 9083422726106044104}
   _isThumb: 0
 --- !u!1 &6161597468741591083
 GameObject:
@@ -2110,7 +2110,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6165519248836422111}
   - component: {fileID: 6161364289384244072}
-  - component: {fileID: 6161364289384244073}
+  - component: {fileID: 6440891535522542461}
   m_Layer: 0
   m_Name: hands:b_l_ring_ignore
   m_TagString: Untagged
@@ -2146,7 +2146,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.02
   m_Center: {x: 0, y: 0.02, z: 0}
---- !u!114 &6161364289384244073
+--- !u!114 &6440891535522542461
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2155,14 +2155,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 6161597468741591083}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c8112511f0b22a42b326598c49de183, type: 3}
+  m_Script: {fileID: 11500000, guid: ed8b5dee9e3d60242aa8ec106e5bd49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   indexAnt: {fileID: 6165652762082964793}
   triggerButton: Oculus_CrossPlatform_PrimaryHandTrigger
   fingersAnt:
-  - {fileID: 6161364288191678466}
-  - {fileID: 6161364288175999383}
+  - {fileID: 6543798328250923152}
+  - {fileID: 858876030541555324}
   _isThumb: 0
 --- !u!1 &6162067037010738575
 GameObject:
@@ -2205,7 +2205,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6165654509538505583}
   - component: {fileID: 6161364288574050752}
-  - component: {fileID: 6161364288574050754}
   - component: {fileID: 6161364288574050753}
   m_Layer: 0
   m_Name: manoIzq
@@ -2244,19 +2243,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0.09}
---- !u!114 &6161364288574050754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6162103260118663965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1605d93eafee268468e90a4b63e28cde, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pivot: {fileID: 6161364289997426227}
 --- !u!114 &6161364288574050753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2272,7 +2258,7 @@ MonoBehaviour:
   pivot: {fileID: 6161364289997426236}
   lanternLight: {fileID: 0}
   InputName: Oculus_CrossPlatform_PrimaryHandTrigger
-  bpp: {fileID: 6161364288574050754}
+  bpp: {fileID: 0}
 --- !u!1 &6162164615015053507
 GameObject:
   m_ObjectHideFlags: 0
@@ -2283,7 +2269,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6164921417932660333}
   - component: {fileID: 6161364288185187251}
-  - component: {fileID: 6161364288185187260}
+  - component: {fileID: 6079113420938490279}
   m_Layer: 0
   m_Name: hands:b_l_middle_ignore
   m_TagString: Untagged
@@ -2319,7 +2305,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.02
   m_Center: {x: 0, y: 0.02, z: 0}
---- !u!114 &6161364288185187260
+--- !u!114 &6079113420938490279
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2328,14 +2314,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 6162164615015053507}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c8112511f0b22a42b326598c49de183, type: 3}
+  m_Script: {fileID: 11500000, guid: ed8b5dee9e3d60242aa8ec106e5bd49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   indexAnt: {fileID: 6165581699246974183}
   triggerButton: Oculus_CrossPlatform_PrimaryHandTrigger
   fingersAnt:
-  - {fileID: 6161364289849451518}
-  - {fileID: 6161364288929288825}
+  - {fileID: 9083422726106044104}
+  - {fileID: 7843159638286360134}
   _isThumb: 0
 --- !u!1 &6162190074945063667
 GameObject:
@@ -2347,7 +2333,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6164970413262033927}
   - component: {fileID: 6161364288191678465}
-  - component: {fileID: 6161364288191678466}
+  - component: {fileID: 6543798328250923152}
   m_Layer: 0
   m_Name: hands:b_l_ring2
   m_TagString: Untagged
@@ -2383,7 +2369,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.02
   m_Center: {x: 0, y: 0.02, z: 0}
---- !u!114 &6161364288191678466
+--- !u!114 &6543798328250923152
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2392,7 +2378,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6162190074945063667}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c8112511f0b22a42b326598c49de183, type: 3}
+  m_Script: {fileID: 11500000, guid: ed8b5dee9e3d60242aa8ec106e5bd49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   indexAnt: {fileID: 6165739949289904915}
@@ -2424,7 +2410,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6162193273057006179}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.011, z: 0.122}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4593552292246673482}
@@ -2460,7 +2446,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6165761582072104673}
   - component: {fileID: 5397055640958926188}
-  - component: {fileID: 8139545195910046529}
+  - component: {fileID: 6085344859184129870}
   m_Layer: 0
   m_Name: hands:b_l_index2
   m_TagString: Untagged
@@ -2496,7 +2482,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.02
   m_Center: {x: 0, y: 0.02, z: 0}
---- !u!114 &8139545195910046529
+--- !u!114 &6085344859184129870
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2505,7 +2491,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6162224531548660171}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c8112511f0b22a42b326598c49de183, type: 3}
+  m_Script: {fileID: 11500000, guid: ed8b5dee9e3d60242aa8ec106e5bd49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   indexAnt: {fileID: 6165432132795278879}
@@ -2552,7 +2538,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6165063493381081375}
   - component: {fileID: 6161364289849451517}
-  - component: {fileID: 6161364289849451518}
+  - component: {fileID: 9083422726106044104}
   m_Layer: 0
   m_Name: hands:b_l_middle2
   m_TagString: Untagged
@@ -2588,7 +2574,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.02
   m_Center: {x: 0, y: 0.02, z: 0}
---- !u!114 &6161364289849451518
+--- !u!114 &9083422726106044104
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2597,7 +2583,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6162259019178346047}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c8112511f0b22a42b326598c49de183, type: 3}
+  m_Script: {fileID: 11500000, guid: ed8b5dee9e3d60242aa8ec106e5bd49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   indexAnt: {fileID: 6165839116239902443}
@@ -2676,7 +2662,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6165120758589063937}
   - component: {fileID: 6161364288606905010}
-  - component: {fileID: 6161364288606905011}
+  - component: {fileID: 876069554362600499}
   m_Layer: 0
   m_Name: hands:b_l_pinky2
   m_TagString: Untagged
@@ -2712,7 +2698,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.02
   m_Center: {x: 0, y: 0.02, z: 0}
---- !u!114 &6161364288606905011
+--- !u!114 &876069554362600499
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2721,7 +2707,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6162380220405706371}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c8112511f0b22a42b326598c49de183, type: 3}
+  m_Script: {fileID: 11500000, guid: ed8b5dee9e3d60242aa8ec106e5bd49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   indexAnt: {fileID: 6164904744579542323}
@@ -2897,7 +2883,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6165710742052275377}
   - component: {fileID: 6161364289933856938}
-  - component: {fileID: 6161364289933856939}
+  - component: {fileID: 2793099116513846502}
   m_Layer: 0
   m_Name: hands:b_l_pinky_ignore
   m_TagString: Untagged
@@ -2933,7 +2919,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.02
   m_Center: {x: 0, y: 0.02, z: 0}
---- !u!114 &6161364289933856939
+--- !u!114 &2793099116513846502
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2942,14 +2928,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 6162456814872947505}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c8112511f0b22a42b326598c49de183, type: 3}
+  m_Script: {fileID: 11500000, guid: ed8b5dee9e3d60242aa8ec106e5bd49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   indexAnt: {fileID: 6164897011802076215}
   triggerButton: Oculus_CrossPlatform_PrimaryHandTrigger
   fingersAnt:
-  - {fileID: 6161364288606905011}
-  - {fileID: 6161364290290185948}
+  - {fileID: 876069554362600499}
+  - {fileID: 322311675711642083}
   _isThumb: 0
 --- !u!1 &6162471771396900181
 GameObject:
@@ -3022,7 +3008,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6165684534363516427}
   - component: {fileID: 6161364288914133438}
-  - component: {fileID: 6161364288914133437}
+  - component: {fileID: 1640324532275433209}
   m_Layer: 0
   m_Name: hands:b_l_index_ignore
   m_TagString: Untagged
@@ -3058,7 +3044,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.02
   m_Center: {x: 0, y: 0.02, z: 0}
---- !u!114 &6161364288914133437
+--- !u!114 &1640324532275433209
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3067,14 +3053,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 6162956294961411777}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c8112511f0b22a42b326598c49de183, type: 3}
+  m_Script: {fileID: 11500000, guid: ed8b5dee9e3d60242aa8ec106e5bd49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   indexAnt: {fileID: 6165591781992060365}
   triggerButton: Oculus_CrossPlatform_PrimaryIndexTrigger
   fingersAnt:
-  - {fileID: 8139545195910046529}
-  - {fileID: 8675595946259041905}
+  - {fileID: 6085344859184129870}
+  - {fileID: 8783182663396108687}
   _isThumb: 0
 --- !u!1 &6163015014925625421
 GameObject:
@@ -3086,7 +3072,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6165591781992060365}
   - component: {fileID: 6161364288914133439}
-  - component: {fileID: 8675595946259041905}
+  - component: {fileID: 8783182663396108687}
   m_Layer: 0
   m_Name: hands:b_l_index3
   m_TagString: Untagged
@@ -3122,7 +3108,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.02
   m_Center: {x: 0, y: 0.02, z: 0}
---- !u!114 &8675595946259041905
+--- !u!114 &8783182663396108687
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3131,13 +3117,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6163015014925625421}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c8112511f0b22a42b326598c49de183, type: 3}
+  m_Script: {fileID: 11500000, guid: ed8b5dee9e3d60242aa8ec106e5bd49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   indexAnt: {fileID: 6165761582072104673}
   triggerButton: Oculus_CrossPlatform_PrimaryIndexTrigger
   fingersAnt:
-  - {fileID: 8139545195910046529}
+  - {fileID: 6085344859184129870}
   _isThumb: 0
 --- !u!1 &6163029622530701789
 GameObject:
@@ -3149,7 +3135,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6165652762082964793}
   - component: {fileID: 6161364288175999382}
-  - component: {fileID: 6161364288175999383}
+  - component: {fileID: 858876030541555324}
   m_Layer: 0
   m_Name: hands:b_l_ring3
   m_TagString: Untagged
@@ -3185,7 +3171,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.02
   m_Center: {x: 0, y: 0.02, z: 0}
---- !u!114 &6161364288175999383
+--- !u!114 &858876030541555324
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3194,13 +3180,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6163029622530701789}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c8112511f0b22a42b326598c49de183, type: 3}
+  m_Script: {fileID: 11500000, guid: ed8b5dee9e3d60242aa8ec106e5bd49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   indexAnt: {fileID: 6164970413262033927}
   triggerButton: Oculus_CrossPlatform_PrimaryHandTrigger
   fingersAnt:
-  - {fileID: 6161364288191678466}
+  - {fileID: 6543798328250923152}
   _isThumb: 0
 --- !u!1 &6163043718160190213
 GameObject:
@@ -3243,7 +3229,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6164897011802076215}
   - component: {fileID: 6161364290290185939}
-  - component: {fileID: 6161364290290185948}
+  - component: {fileID: 322311675711642083}
   m_Layer: 0
   m_Name: hands:b_l_pinky3
   m_TagString: Untagged
@@ -3279,7 +3265,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.02
   m_Center: {x: 0, y: 0.02, z: 0}
---- !u!114 &6161364290290185948
+--- !u!114 &322311675711642083
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3288,13 +3274,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6163052715612816773}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c8112511f0b22a42b326598c49de183, type: 3}
+  m_Script: {fileID: 11500000, guid: ed8b5dee9e3d60242aa8ec106e5bd49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   indexAnt: {fileID: 6165120758589063937}
   triggerButton: Oculus_CrossPlatform_PrimaryHandTrigger
   fingersAnt:
-  - {fileID: 6161364288606905011}
+  - {fileID: 876069554362600499}
   _isThumb: 0
 --- !u!1 &6163077937496949595
 GameObject:
@@ -3306,7 +3292,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6165789677187003451}
   - component: {fileID: 6161364289105179657}
-  - component: {fileID: 6161364289105179658}
+  - component: {fileID: 4876322981885362489}
   m_Layer: 0
   m_Name: hands:b_l_thumb_ignore
   m_TagString: Untagged
@@ -3342,7 +3328,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.02
   m_Center: {x: 0, y: 0.02, z: 0}
---- !u!114 &6161364289105179658
+--- !u!114 &4876322981885362489
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3351,14 +3337,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 6163077937496949595}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c8112511f0b22a42b326598c49de183, type: 3}
+  m_Script: {fileID: 11500000, guid: ed8b5dee9e3d60242aa8ec106e5bd49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   indexAnt: {fileID: 6165438375452324995}
-  triggerButton: Oculus_CrossPlatform_Button4
+  triggerButton: Oculus_CrossPlatform_Button2
   fingersAnt:
-  - {fileID: 6161364289267317909}
-  _isThumb: 1
+  - {fileID: 4226544642560563163}
+  _isThumb: 0
 --- !u!1001 &1191014349
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3370,6 +3356,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PostEffectPrefiles
+      objectReference: {fileID: 0}
+    - target: {fileID: 8658617368449296164, guid: d508654f14fd27a46ba32d61258df3e5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8658617368449296167, guid: d508654f14fd27a46ba32d61258df3e5,
         type: 3}

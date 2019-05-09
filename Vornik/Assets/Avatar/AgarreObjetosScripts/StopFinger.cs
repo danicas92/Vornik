@@ -7,7 +7,6 @@ public class StopFinger : MonoBehaviour {
     [SerializeField] private Transform indexAnt;
     [SerializeField] private string triggerButton;
     [SerializeField] private List<StopFinger> fingersAnt;
-    [SerializeField] private bool RotationInverse;
 
     private float multiplyer;
     private float multiplyerAnt = 0;
@@ -81,7 +80,7 @@ public class StopFinger : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Grab"))
+        if (other.gameObject.CompareTag("CollisionFingers"))
         {
             collisionDetected = true;
             _maxRotacion = indexAnt.transform.localRotation.z;
@@ -91,7 +90,7 @@ public class StopFinger : MonoBehaviour {
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("Grab"))
+        if (other.gameObject.CompareTag("CollisionFingers"))
         {
             collisionDetected = false;
             _maxRotacion = 0;
