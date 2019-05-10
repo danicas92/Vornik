@@ -25,7 +25,7 @@ public class AgarreMano : MonoBehaviour
 
     public void OnTriggerStay(Collider colliderObject)
     {
-        if (colliderObject.CompareTag("Grab") && Input.GetAxis(InputName) >= 0.15f && _currentObject == null)
+        if (colliderObject.CompareTag("Grab") && Input.GetAxis(InputName) >= 0.15f && _currentObject == null && !colliderObject.GetComponent<ObjectGrabber>().GetGrabbed())
         {
             _currentObject = colliderObject.gameObject;
             _currentObject.GetComponent<ObjectGrabber>().Grab(pivot, isRight);

@@ -32,6 +32,7 @@ public class ObjectGrabber : MonoBehaviour
         Rigidbody rb = GetComponent<Rigidbody>();
         rb.useGravity = false;
         rb.isKinematic = true;
+        SetCollidersTrigger(true);
         _isGrabbed = true;
     }
 
@@ -43,7 +44,16 @@ public class ObjectGrabber : MonoBehaviour
         rb.isKinematic = false;
         Vector3 CurrentVelocity = (hand - handLastPosition) / Time.deltaTime;
         rb.velocity = CurrentVelocity * MultiplyVeloc;
+        SetCollidersTrigger(false);
         transform.parent = null;
+    }
+
+    private void SetCollidersTrigger(bool set)
+    {
+        var colliders = GetComponents<Collider>();
+        foreach (var collider in colliders)
+            collider.isTrigger = set;
+
     }
 
 }

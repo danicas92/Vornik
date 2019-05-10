@@ -61,16 +61,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Avatar\AgarreObjetosScripts\AgarreMano.cs" />
+    <Compile Include="Assets\Avatar\AgarreObjetosScripts\Basura\GrabbableObjects.cs" />
+    <Compile Include="Assets\Avatar\AgarreObjetosScripts\Basura\GrabbingHand.cs" />
+    <Compile Include="Assets\Avatar\AgarreObjetosScripts\Basura\PoseProvider.cs" />
     <Compile Include="Assets\Avatar\AgarreObjetosScripts\ControllerCollidersGrab.cs" />
-    <Compile Include="Assets\Avatar\AgarreObjetosScripts\GrabbableObjects.cs" />
-    <Compile Include="Assets\Avatar\AgarreObjetosScripts\GrabbingHand.cs" />
     <Compile Include="Assets\Avatar\AgarreObjetosScripts\ObjectGrabber.cs" />
-    <Compile Include="Assets\Avatar\AgarreObjetosScripts\PoseProvider.cs" />
+    <Compile Include="Assets\Avatar\AgarreObjetosScripts\SpecificObjects\ActivationScript.cs" />
     <Compile Include="Assets\Avatar\AgarreObjetosScripts\SpecificObjects\BolaLaberinto.cs" />
     <Compile Include="Assets\Avatar\AgarreObjetosScripts\StopFinger.cs" />
     <Compile Include="Assets\Avatar\MovimientoScripts\MoveJoystick.cs" />
     <Compile Include="Assets\Avatar\MovimientoScripts\MoveTeleport.cs" />
     <Compile Include="Assets\Avatar\MovimientoScripts\TeleportMovement.cs" />
+    <Compile Include="Assets\Avatar\ScriptsMecanicasCabeza\AnswerWithHead.cs" />
     <Compile Include="Assets\Proyect_Controller\Scripts\Controlador\ControllerManager.cs" />
     <Compile Include="Assets\Proyect_Controller\Scripts\Controlador\SubtitleControl.cs" />
     <Compile Include="Assets\Proyect_Controller\Scripts\Guardado\DataManager.cs" />
