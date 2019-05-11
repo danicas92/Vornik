@@ -41,6 +41,7 @@ public class SubtitleControl : MonoBehaviour
     {
         if (flag == interactive)
         {
+            //esperar cabeza
             flag++;
             ReadLine();
         }//Accionar interaccion

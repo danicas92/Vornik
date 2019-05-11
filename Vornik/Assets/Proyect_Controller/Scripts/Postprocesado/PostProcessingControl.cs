@@ -17,31 +17,60 @@ public class PostProcessingControl : MonoBehaviour
     [Space]
     [Header("Activadores")]
     public int profileBlack,profileWhite;//1->Activado,0->Desactivado,>1->otra configuracion
+    public bool activateBlack, activateWhite;
 
     //Efectos salud
     DepthOfField depthOfField;
     static readonly float DEPTHMIN = 0.1f, DEPTHMAX = 1f, TIMER = 1f;
     public int stateDepthOfField = 0; //0->Min, 1->Max, >1->Random
-    
+
+
+    private void Start()
+    {
+        activateBlack = true;
+        activateWhite = false;
+        postProcessingProfiles[1].SetActive(activateWhite);
+    }
 
     void FixedUpdate()
     {
 
         //Transiciones
-        Vector3 vectorBlack;
-        if (profileBlack == 1)
-            vectorBlack = new Vector3(transform.parent.position.x, Mathf.Lerp(postProcessingProfiles[2].transform.position.y, transform.parent.position.y, Time.deltaTime * velocity), transform.parent.position.z);
-        else
-            vectorBlack = new Vector3(transform.parent.position.x, Mathf.Lerp(postProcessingProfiles[2].transform.position.y, MAX, Time.deltaTime * velocity), transform.parent.position.z);
+        if (activateBlack)
+        {
+            Vector3 vectorBlack;
+            if (profileBlack == 1)
+                vectorBlack = new Vector3(transform.parent.position.x, Mathf.Lerp(postProcessingProfiles[2].transform.position.y, transform.parent.position.y, Time.deltaTime * velocity), transform.parent.position.z);
+            else
+            {
+                vectorBlack = new Vector3(transform.parent.position.x, Mathf.Lerp(postProcessingProfiles[2].transform.position.y, MAX, Time.deltaTime * velocity), transform.parent.position.z);
+                if (MAX - vectorBlack.y < 1)
+                {
+                    activateBlack = false;
+                    postProcessingProfiles[2].SetActive(activateBlack);
+                }
+                    
+            }
+            postProcessingProfiles[2].transform.position = vectorBlack;
+        }
 
-        Vector3 vectorWhite;
-        if (profileWhite == 1)
-            vectorWhite = new Vector3(transform.parent.position.x, Mathf.Lerp(postProcessingProfiles[1].transform.position.y, transform.parent.position.y, Time.deltaTime * velocity), transform.parent.position.z);
-        else
-            vectorWhite = new Vector3(transform.parent.position.x, Mathf.Lerp(postProcessingProfiles[1].transform.position.y, MAX, Time.deltaTime * velocity), transform.parent.position.z);
-
-        postProcessingProfiles[2].transform.position = vectorBlack;
-        postProcessingProfiles[1].transform.position = vectorWhite;
+        if (activateWhite)
+        {
+            Vector3 vectorWhite;
+            if (profileWhite == 1)
+                vectorWhite = new Vector3(transform.parent.position.x, Mathf.Lerp(postProcessingProfiles[1].transform.position.y, transform.parent.position.y, Time.deltaTime * velocity), transform.parent.position.z);
+            else
+            {
+                vectorWhite = new Vector3(transform.parent.position.x, Mathf.Lerp(postProcessingProfiles[1].transform.position.y, MAX, Time.deltaTime * velocity), transform.parent.position.z);
+                if (MAX - vectorWhite.y < 1)
+                {
+                    activateWhite = false;
+                    postProcessingProfiles[1].SetActive(activateWhite);
+                }
+                    
+            }
+            postProcessingProfiles[1].transform.position = vectorWhite;
+        }
 
         //Salud
         if (stateDepthOfField == 0)
@@ -68,17 +97,29 @@ public class PostProcessingControl : MonoBehaviour
     public void ActivateBlack(bool state)
     {
         if (state)
+        {
             profileBlack = 1;
+            activateBlack = true;
+        }
         else
+        {
             profileBlack = 0;
+        }
+            
     }
 
     public void ActivateWhite(bool state)
     {
         if (state)
+        {
             profileWhite = 0;
+        }
         else
+        {
             profileWhite = 1;
+            activateWhite = true;
+            postProcessingProfiles[1].SetActive(activateWhite);
+        }       
     }
 
     public void FocusChange(int state)

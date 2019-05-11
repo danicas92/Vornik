@@ -1935,7 +1935,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1564888374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1992,7 +1992,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 87d3282a92e4e524d932935cddafdfe3, type: 3}
   - {fileID: 8300000, guid: af6196e6c6012134b8bd6051160a5fb0, type: 3}
   - {fileID: 8300000, guid: 58be681c5caa5204cb8b2a7c290037c5, type: 3}
-  interactive: 3
+  interactive: 4
   action: 0
   text: {fileID: 418805214}
   audioSource: {fileID: 2066108058}
@@ -8128,6 +8128,8 @@ MonoBehaviour:
   velocity: 0.5
   profileBlack: 0
   profileWhite: 0
+  activateBlack: 0
+  activateWhite: 0
   stateDepthOfField: 0
 --- !u!4 &8658617369710593653
 Transform:
@@ -8164,7 +8166,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &8783182663045834512
 MonoBehaviour:
   m_ObjectHideFlags: 0
