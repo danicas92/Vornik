@@ -68,6 +68,7 @@
     <Compile Include="Assets\Avatar\AgarreObjetosScripts\ObjectGrabber.cs" />
     <Compile Include="Assets\Avatar\AgarreObjetosScripts\SpecificObjects\ActivationScript.cs" />
     <Compile Include="Assets\Avatar\AgarreObjetosScripts\SpecificObjects\BolaLaberinto.cs" />
+    <Compile Include="Assets\Avatar\AgarreObjetosScripts\SpecificObjects\LlaveCajaMusica.cs" />
     <Compile Include="Assets\Avatar\AgarreObjetosScripts\StopFinger.cs" />
     <Compile Include="Assets\Avatar\MovimientoScripts\MoveJoystick.cs" />
     <Compile Include="Assets\Avatar\MovimientoScripts\MoveTeleport.cs" />

@@ -36,14 +36,17 @@ public class ObjectGrabber : MonoBehaviour
         _isGrabbed = true;
     }
 
-    public void Throw(Vector3 hand, Vector3 handLastPosition)//Se usa la pos de la mano para dejar el objeto ahy, la ultima pos de la mano para calcular la vel y la rotación para dejarlo con la rotaión actual de la mano
+    public void Throw(Vector3 hand, Vector3 handLastPosition, bool activeRigidBody)//Se usa la pos de la mano para dejar el objeto ahy, la ultima pos de la mano para calcular la vel y la rotación para dejarlo con la rotaión actual de la mano
     {
         _isGrabbed = false;
         Rigidbody rb = GetComponent<Rigidbody>();
-        rb.useGravity = true;
-        rb.isKinematic = false;
-        Vector3 CurrentVelocity = (hand - handLastPosition) / Time.deltaTime;
-        rb.velocity = CurrentVelocity * MultiplyVeloc;
+        if (activeRigidBody)
+        {
+            rb.useGravity = true;
+            rb.isKinematic = false;
+            Vector3 CurrentVelocity = (hand - handLastPosition) / Time.deltaTime;
+            rb.velocity = CurrentVelocity * MultiplyVeloc;
+        }
         SetCollidersTrigger(false);
         transform.parent = null;
     }

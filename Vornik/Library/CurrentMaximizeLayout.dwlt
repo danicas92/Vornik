@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 348}
   m_MaxSize: {x: 12008, y: 8048}
   vertical: 0
-  controlID: 127
+  controlID: 61
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -129,7 +129,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 348}
   m_MaxSize: {x: 8006, y: 8048}
   vertical: 1
-  controlID: 82
+  controlID: 62
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -209,10 +209,10 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
+      scrollPos: {x: 0, y: 28}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 5af4ffff14f6ffffd6fbffff
+      m_ExpandedIDs: 6ef4ffffd6fbffff442900008a290000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -296,9 +296,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.4170829, y: -0.89876723, z: 3.0269547}
+    m_Target: {x: 0.27208766, y: 0.13625741, z: 2.9166923}
     speed: 2
-    m_Value: {x: 1.4170829, y: -0.89876723, z: 3.0269547}
+    m_Value: {x: 0.27208766, y: 0.13625741, z: 2.9166923}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -326,13 +326,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.18662405, y: -0.8110357, z: 0.35636583, w: -0.42473057}
+    m_Target: {x: 0.16061562, y: 0.36757833, z: -0.06461024, w: 0.91373646}
     speed: 2
-    m_Value: {x: -0.18662405, y: -0.8110357, z: 0.35636583, w: -0.42473057}
+    m_Value: {x: 0.16061562, y: 0.36757833, z: -0.06461024, w: 0.91373646}
   m_Size:
-    m_Target: 7.118962
+    m_Target: 2.4452343
     speed: 2
-    m_Value: 7.118962
+    m_Value: 2.4452343
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -771,20 +771,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Avatar/ScriptsMecanicasCabeza
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Avatar/ScriptsMecanicasCabeza
   m_LastFoldersGridSize: 16
   m_LastProjectPath: G:\Vornik\Vornik\Vornik
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: d2160000
-    m_LastClickedID: 5842
-    m_ExpandedIDs: 00000000820f0000fe0f00005a110000885000008a50000000ca9a3b
+    m_SelectedIDs: 6a230000
+    m_LastClickedID: 9066
+    m_ExpandedIDs: 00000000820f0000fe0f00005a110000ee1b0000885000008a50000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -812,7 +812,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000820f0000fe0f00005a110000d2160000ee1b0000885000008a500000
+    m_ExpandedIDs: 00000000820f0000fe0f00005a110000885000008a500000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -837,8 +837,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 9a1a0000
-    m_LastClickedInstanceID: 6810
+    m_SelectedInstanceIDs: 4ef4ffff
+    m_LastClickedInstanceID: -2994
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 383a00006638000068380000283b0000e43c0000823b0000ea320000d8330000ac2c000010d3ffff2ab8f3ff0000000094390000fe4900001c3200005a4a0000fa490000
     m_RenameOverlay:

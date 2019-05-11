@@ -8,6 +8,8 @@ TagManager:
   - Index
   - CollisionFingers
   - Ball
+  - AskCollider
+  - MusicBox
   layers:
   - Default
   - TransparentFX
