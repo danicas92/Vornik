@@ -70,6 +70,7 @@
     <Compile Include="Assets\Avatar\AgarreObjetosScripts\SpecificObjects\BolaLaberinto.cs" />
     <Compile Include="Assets\Avatar\AgarreObjetosScripts\SpecificObjects\ColliderInfo.cs" />
     <Compile Include="Assets\Avatar\AgarreObjetosScripts\SpecificObjects\LlaveCajaMusica.cs" />
+    <Compile Include="Assets\Avatar\AgarreObjetosScripts\SpecificObjects\Monoculo.cs" />
     <Compile Include="Assets\Avatar\AgarreObjetosScripts\SpecificObjects\TrozoTetera.cs" />
     <Compile Include="Assets\Avatar\AgarreObjetosScripts\StopFinger.cs" />
     <Compile Include="Assets\Avatar\MovimientoScripts\MoveJoystick.cs" />
