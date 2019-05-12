@@ -12,7 +12,6 @@ public class TrozoTetera : MonoBehaviour
     {
         if (other.CompareTag("TeapotPiece") && other.GetComponent<ColliderInfo>().GetColliderIdentificador() == identificador)
         {
-            Debug.Log(other.GetComponentInParent<TrozoTetera>().GetIdentificador() +":"+  identificador);
             if (other.GetComponentInParent<TrozoTetera>().GetIdentificador() > identificador) return;
 
             if (!GetComponent<ObjectGrabber>().GetGrabbed() || !other.GetComponentInParent<ObjectGrabber>().GetGrabbed()) return;

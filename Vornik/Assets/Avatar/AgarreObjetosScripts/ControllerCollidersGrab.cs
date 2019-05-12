@@ -13,6 +13,12 @@ public class ControllerCollidersGrab : MonoBehaviour
         stopFingers = GetComponentsInChildren<StopFinger>();
     }
 
+    public void ForcedThrow()
+    {
+        foreach (var fingerScript in stopFingers)
+            fingerScript.PlayThisFinger();
+    }
+
     private void OnEnable()
     {
         foreach (var collider in colliders)

@@ -117,6 +117,7 @@ public class StopFinger : MonoBehaviour {
     public void PlayThisFinger()
     {
         otherCollided = false;
+        collisionDetected = false;
     }
 
     public void StopThisFinger()

@@ -6,6 +6,8 @@ using TMPro;
 
 public class SubtitleControl : MonoBehaviour
 {
+    [SerializeField] private AnswerWithHead answerScript;
+
     [Header("Entradas para la configuración de los subtitulos")]
     [Tooltip("Array de strings para modificar de forma automática")]
     public string[] texts;
@@ -37,13 +39,19 @@ public class SubtitleControl : MonoBehaviour
         
     }
 
+    public void Answer(bool answer)
+    {
+        flag += answer ? 0 : 1;
+        StartCoroutine(nameof(ReadLineSound));
+    }
+
     public void ReadLine()
     {
         if (flag == interactive)
         {
-            //esperar cabeza
-            flag++;
-            ReadLine();
+            answerScript.enabled = true;
+            //flag++;
+            //ReadLine();
         }//Accionar interaccion
         else if (flag < texts.Length)
             StartCoroutine(ReadLineSound());

@@ -8,13 +8,14 @@ public class AnswerWithHead : MonoBehaviour
     [SerializeField] private List<float> timeCollisions = new List<float>();
     [SerializeField] private float timeToAnswer = 3f;
     [SerializeField] private bool _isCollidin = false;
+    [SerializeField] private SubtitleControl subtitleControl;
 
     enum Answer { Yes, No, None }
     private Answer _answer = Answer.None;
 
     private void Update()
     {
-        if (_answer != Answer.None) return;
+        if (_answer != Answer.None) enabled = false;
 
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity))
@@ -53,5 +54,11 @@ public class AnswerWithHead : MonoBehaviour
 
         return Answer.None;
     }
-    
+
+    private void OnDisable()
+    {
+        var aux = _answer == Answer.Yes ? true : false;
+        subtitleControl.Answer(aux);
+    }
+
 }

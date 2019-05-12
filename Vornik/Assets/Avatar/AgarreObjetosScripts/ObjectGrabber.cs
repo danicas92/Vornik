@@ -12,6 +12,7 @@ public class ObjectGrabber : MonoBehaviour
     private bool _isGrabbed;
     private Quaternion _pivotRotationInic;
     private Vector3 _lastPosition;
+    private GameObject handGrabbing;
 
     private float MultiplyVeloc = 1.25f;//Multiplicador de la velocidad de lanzamiento
 
@@ -22,9 +23,9 @@ public class ObjectGrabber : MonoBehaviour
 
     public bool GetGrabbed() { return _isGrabbed; }
 
-    public void Grab( Transform pivot, bool derecha)
+    public void Grab(Transform pivot, bool derecha)
     {
-        
+        handGrabbing = pivot.parent.gameObject;
         transform.parent = pivot;
         transform.SetPositionAndRotation(pivot.position,pivot.rotation);
         var rot = derecha ? rotacionAgarreDer : rotacionAgarreIzq;
@@ -39,6 +40,8 @@ public class ObjectGrabber : MonoBehaviour
     public void Throw(Vector3 hand, Vector3 handLastPosition, bool activeRigidBody)//Se usa la pos de la mano para dejar el objeto ahy, la ultima pos de la mano para calcular la vel y la rotación para dejarlo con la rotaión actual de la mano
     {
         _isGrabbed = false;
+        handGrabbing.GetComponentInChildren<ControllerCollidersGrab>().ForcedThrow();
+        handGrabbing = null;
         Rigidbody rb = GetComponent<Rigidbody>();
         if (activeRigidBody)
         {
