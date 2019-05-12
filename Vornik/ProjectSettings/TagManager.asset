@@ -10,6 +10,7 @@ TagManager:
   - Ball
   - AskCollider
   - MusicBox
+  - TeapotPiece
   layers:
   - Default
   - TransparentFX
