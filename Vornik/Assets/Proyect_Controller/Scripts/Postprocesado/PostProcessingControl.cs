@@ -20,6 +20,7 @@ public class PostProcessingControl : MonoBehaviour
     public bool activateBlack, activateWhite;
 
     //Efectos salud
+    public bool memoryScene = false;
     DepthOfField depthOfField;
     static readonly float DEPTHMIN = 0.1f, DEPTHMAX = 1f, TIMER = 1f;
     public int stateDepthOfField = 0; //0->Min, 1->Max, >1->Random
@@ -73,12 +74,16 @@ public class PostProcessingControl : MonoBehaviour
         }
 
         //Salud
-        if (stateDepthOfField == 0)
-            depthOfField.focusDistance.value = Mathf.Lerp(depthOfField.focusDistance.value, DEPTHMIN, velocity*2 * Time.deltaTime);
-        else if (stateDepthOfField == 1)
-            depthOfField.focusDistance.value = Mathf.Lerp(depthOfField.focusDistance.value, DEPTHMAX, velocity*2 * Time.deltaTime);
-        else
-            depthOfField.focusDistance.value = Mathf.Lerp(depthOfField.focusDistance.value, Random.Range(DEPTHMIN,DEPTHMAX/1.5f) , velocity * Time.deltaTime);
+        if (!memoryScene)
+        {
+            if (stateDepthOfField == 0)
+                depthOfField.focusDistance.value = Mathf.Lerp(depthOfField.focusDistance.value, DEPTHMIN, velocity * 2 * Time.deltaTime);
+            else if (stateDepthOfField == 1)
+                depthOfField.focusDistance.value = Mathf.Lerp(depthOfField.focusDistance.value, DEPTHMAX, velocity * 2 * Time.deltaTime);
+            else
+                depthOfField.focusDistance.value = Mathf.Lerp(depthOfField.focusDistance.value, Random.Range(DEPTHMIN, DEPTHMAX / 1.5f), velocity * Time.deltaTime);
+        }
+        
 
     }
 

@@ -13,24 +13,27 @@ ModelImporter:
     100014: Box019
     100016: Box020
     100018: Box021
-    100020: Box071
-    100022: ColumnaEsquina
-    100024: ColumnaEsquina001
-    100026: ColumnaEsquina002
-    100028: ColumnaEsquina003
-    100030: columnaPared001
-    100032: columnaPared002
-    100034: columnaPared003
-    100036: Cylinder007
-    100038: //RootNode
-    100040: marcoPuerta006
-    100042: paredesMainSala
-    100044: rodaTecho011
-    100046: sueloMainSala
-    100048: viga
-    100050: viga001
-    100052: viga002
-    100054: viga003
+    100020: Box058
+    100022: Box071
+    100024: Box086
+    100026: Box087
+    100028: ColumnaEsquina
+    100030: ColumnaEsquina001
+    100032: ColumnaEsquina002
+    100034: ColumnaEsquina003
+    100036: columnaPared001
+    100038: columnaPared002
+    100040: columnaPared003
+    100042: Cylinder007
+    100044: //RootNode
+    100046: marcoPuerta006
+    100048: paredesMainSala
+    100050: rodaTecho011
+    100052: sueloMainSala
+    100054: viga
+    100056: viga001
+    100058: viga002
+    100060: viga003
     400000: Box006
     400002: Box007
     400004: Box012
@@ -41,28 +44,33 @@ ModelImporter:
     400014: Box019
     400016: Box020
     400018: Box021
-    400020: Box071
-    400022: ColumnaEsquina
-    400024: ColumnaEsquina001
-    400026: ColumnaEsquina002
-    400028: ColumnaEsquina003
-    400030: columnaPared001
-    400032: columnaPared002
-    400034: columnaPared003
-    400036: Cylinder007
-    400038: //RootNode
-    400040: marcoPuerta006
-    400042: paredesMainSala
-    400044: rodaTecho011
-    400046: sueloMainSala
-    400048: viga
-    400050: viga001
-    400052: viga002
-    400054: viga003
+    400020: Box058
+    400022: Box071
+    400024: Box086
+    400026: Box087
+    400028: ColumnaEsquina
+    400030: ColumnaEsquina001
+    400032: ColumnaEsquina002
+    400034: ColumnaEsquina003
+    400036: columnaPared001
+    400038: columnaPared002
+    400040: columnaPared003
+    400042: Cylinder007
+    400044: //RootNode
+    400046: marcoPuerta006
+    400048: paredesMainSala
+    400050: rodaTecho011
+    400052: sueloMainSala
+    400054: viga
+    400056: viga001
+    400058: viga002
+    400060: viga003
     2100000: techo suelo
     2100002: paredes
     2100004: No Name
-    2100006: puerta
+    2100006: techoSueloVigas
+    2100008: puerta
+    2100010: arregloPuertas
     2300000: Box006
     2300002: Box007
     2300004: Box012
@@ -73,23 +81,26 @@ ModelImporter:
     2300014: Box019
     2300016: Box020
     2300018: Box021
-    2300020: Box071
-    2300022: ColumnaEsquina
-    2300024: ColumnaEsquina001
-    2300026: ColumnaEsquina002
-    2300028: ColumnaEsquina003
-    2300030: columnaPared001
-    2300032: columnaPared002
-    2300034: columnaPared003
-    2300036: Cylinder007
-    2300038: marcoPuerta006
-    2300040: paredesMainSala
-    2300042: rodaTecho011
-    2300044: sueloMainSala
-    2300046: viga
-    2300048: viga001
-    2300050: viga002
-    2300052: viga003
+    2300020: Box058
+    2300022: Box071
+    2300024: Box086
+    2300026: Box087
+    2300028: ColumnaEsquina
+    2300030: ColumnaEsquina001
+    2300032: ColumnaEsquina002
+    2300034: ColumnaEsquina003
+    2300036: columnaPared001
+    2300038: columnaPared002
+    2300040: columnaPared003
+    2300042: Cylinder007
+    2300044: marcoPuerta006
+    2300046: paredesMainSala
+    2300048: rodaTecho011
+    2300050: sueloMainSala
+    2300052: viga
+    2300054: viga001
+    2300056: viga002
+    2300058: viga003
     3300000: Box006
     3300002: Box007
     3300004: Box012
@@ -100,23 +111,26 @@ ModelImporter:
     3300014: Box019
     3300016: Box020
     3300018: Box021
-    3300020: Box071
-    3300022: ColumnaEsquina
-    3300024: ColumnaEsquina001
-    3300026: ColumnaEsquina002
-    3300028: ColumnaEsquina003
-    3300030: columnaPared001
-    3300032: columnaPared002
-    3300034: columnaPared003
-    3300036: Cylinder007
-    3300038: marcoPuerta006
-    3300040: paredesMainSala
-    3300042: rodaTecho011
-    3300044: sueloMainSala
-    3300046: viga
-    3300048: viga001
-    3300050: viga002
-    3300052: viga003
+    3300020: Box058
+    3300022: Box071
+    3300024: Box086
+    3300026: Box087
+    3300028: ColumnaEsquina
+    3300030: ColumnaEsquina001
+    3300032: ColumnaEsquina002
+    3300034: ColumnaEsquina003
+    3300036: columnaPared001
+    3300038: columnaPared002
+    3300040: columnaPared003
+    3300042: Cylinder007
+    3300044: marcoPuerta006
+    3300046: paredesMainSala
+    3300048: rodaTecho011
+    3300050: sueloMainSala
+    3300052: viga
+    3300054: viga001
+    3300056: viga002
+    3300058: viga003
     4300000: sueloMainSala
     4300002: paredesMainSala
     4300004: ColumnaEsquina
@@ -140,10 +154,13 @@ ModelImporter:
     4300040: Box019
     4300042: Box020
     4300044: Box021
-    4300046: Box071
-    4300048: Cylinder007
-    4300050: marcoPuerta006
-    4300052: rodaTecho011
+    4300046: Box058
+    4300048: Box071
+    4300050: Cylinder007
+    4300052: marcoPuerta006
+    4300054: rodaTecho011
+    4300056: Box086
+    4300058: Box087
     7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
