@@ -33,11 +33,7 @@ public class SubtitleControl : MonoBehaviour
         flag = 0;
     }
 
-    
-    void Update()
-    {
-        
-    }
+
 
     public void Answer(bool answer)
     {
