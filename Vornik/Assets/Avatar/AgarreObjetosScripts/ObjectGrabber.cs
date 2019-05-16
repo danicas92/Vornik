@@ -57,6 +57,7 @@ public class ObjectGrabber : MonoBehaviour
     private void SetCollidersTrigger(bool set)
     {
         var colliders = GetComponents<Collider>();
+        var colliderChildren = GetComponentsInChildren<Collider>();
         foreach (var collider in colliders)
             collider.isTrigger = set;
 

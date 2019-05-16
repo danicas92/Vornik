@@ -16,9 +16,9 @@ public class MoveJoystick : MonoBehaviour {
 
     private void Awake()
     {
-        rotationAxis = "Oculus_CrossPlatform_PrimaryThumbstickHorizontal";
-        movementAxisHorizontal = "Oculus_CrossPlatform_SecondaryThumbstickHorizontal";
-        movementAxisVertical = "Oculus_CrossPlatform_SecondaryThumbstickVertical";
+        rotationAxis = "Oculus_CrossPlatform_SecondaryThumbstickHorizontal";
+        movementAxisHorizontal = "Oculus_CrossPlatform_PrimaryThumbstickHorizontal";
+        movementAxisVertical = "Oculus_CrossPlatform_PrimaryThumbstickVertical";
     }
 
 	// Update is called once per frame
@@ -44,7 +44,17 @@ public class MoveJoystick : MonoBehaviour {
         }
 
         //MOVIMIENTO
-        transform.Translate(Input.GetAxis(movementAxisHorizontal)*0.03f,0,Input.GetAxis(movementAxisVertical)*0.03f);
+
+        
+        var posX = Input.GetAxis(movementAxisHorizontal);
+        var posZ = Input.GetAxis(movementAxisVertical);
+        /*
+        var newPos = Camera.main.transform.right * Time.deltaTime * posX + Camera.main.transform.forward * Time.deltaTime * posZ;
+        transform.Translate(-newPos);*/
+
+        transform.Translate(posX*Time.deltaTime*1.5f,0,posZ*Time.deltaTime*1.5f);
+        
+
         
 
 	}

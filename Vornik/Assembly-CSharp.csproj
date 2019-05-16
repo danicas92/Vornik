@@ -69,6 +69,7 @@
     <Compile Include="Assets\Avatar\AgarreObjetosScripts\SpecificObjects\ActivationScript.cs" />
     <Compile Include="Assets\Avatar\AgarreObjetosScripts\SpecificObjects\BolaLaberinto.cs" />
     <Compile Include="Assets\Avatar\AgarreObjetosScripts\SpecificObjects\ColliderInfo.cs" />
+    <Compile Include="Assets\Avatar\AgarreObjetosScripts\SpecificObjects\Linterna.cs" />
     <Compile Include="Assets\Avatar\AgarreObjetosScripts\SpecificObjects\LlaveCajaMusica.cs" />
     <Compile Include="Assets\Avatar\AgarreObjetosScripts\SpecificObjects\Monoculo.cs" />
     <Compile Include="Assets\Avatar\AgarreObjetosScripts\SpecificObjects\TrozoTetera.cs" />
