@@ -3,7 +3,7 @@ PlayerPath?
 C:/Users/d/Desktop/Nueva carpeta/Vornik.exe
 SceneListBegin?
 Assets/Scenes/Phase_1.unity
-Assets/Scenes/Team cinematic/TeamCinematic.unity
+Assets/Scenes/Memory2.unity
 SceneListEnd?
 71961c90b9e05ecb48b5969e15e1c70a Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.PostProcessLayer
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.ONSPVersion
@@ -83,8 +83,6 @@ c31603324da275845ef0e334c0da7196 Assembly-CSharp.dll:.CharacterCameraConstraint
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:OculusSampleFramework.PauseOnInputLoss
 964584b47463143da42961d88e7b82c7 Assembly-CSharp.dll:.GuardianBoundaryEnforcer
 36ae7cc3e989c6df9341b63a0b042603 Assembly-CSharp.dll:Oculus.Platform.Samples.VrBoardGame.BoardPosition
-71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
-71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
 6d87c2fdebb372d7340d22e63b4c5db7 Assembly-CSharp.dll:.EfectoLupa
 0e5bab27b440b5571316d8f83849552c Assembly-CSharp.dll:VLB.VolumetricLightBeam
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
@@ -222,6 +220,7 @@ e305e41588c5d1851a1cbc0822592c31 Assembly-CSharp.dll:.LlaveCajaMusica
 d8ea5e33d2a083136881dfd39842bcf3 Assembly-CSharp.dll:.LocomotionController
 a53651ee3996fbba20dfe0fce02f0b23 Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.AutoExposure
 a59e183d3f86325b6f381a8fc91f951c Assembly-CSharp.dll:OculusSampleFramework.DistanceGrabbable
+35e9f19f6421dd9c8ce74753dcb0f3e5 Assembly-CSharp.dll:.Linterna
 ab9b3242e7f7cea8eb7d313db01cc29d Assembly-CSharp.dll:.OVRLipSyncContextCanned
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Oculus.Platform.Samples.VrHoops.FlyText
 a4b88f3b08f1f148e04c6c3d7544c9ec Oculus.VR.dll:.OVRMonoscopic
@@ -266,7 +265,7 @@ e0ee4b3d4e27318934cc940a969d3d96 UnityEngine.Networking.dll:UnityEngine.Networki
 ad9173d3a69d99153f38ed4b62226129 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 9b895dcabbc1faf095c000c32d471fd0 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 5887ef1bc706b22b773d253fd443ceef UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
-dd551380e26608fc52f156003f457419 Assembly-CSharp.dll:.PostProcessingControl
+c1277340db714be87d170e3cfaed6794 Assembly-CSharp.dll:.PostProcessingControl
 9f7fd5f1cdce7cb0cbd6b8430ff831c1 Assembly-CSharp.dll:Oculus.Platform.Samples.VrBoardGame.EyeCamera
 c786f2d98c803eb9611d2a4e6ca117c1 Assembly-CSharp.dll:VLB.TriggerZone
 f83d0f9f6e8a36ca4d3c1cff4b61ecb7 Assembly-CSharp.dll:VLB.Config
@@ -287,6 +286,7 @@ a4b88f3b08f1f148e04c6c3d7544c9ec Oculus.VR.dll:.OVRChromaticAberration
 3a0fa4528690e89614a27f9b88a889c4 Oculus.VR.dll:.OVRSceneSampleController
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Oculus.Platform.Samples.VrHoops.PlatformManager
 737a19db869bacb007bc3ae8f3e006ab Assembly-CSharp.dll:VLB_Samples.LightGenerator
+4d6e960e3e9b5a547f0b70f0c8662275 Assembly-CSharp.dll:.Monoculo
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.OvrAvatarSettingsEditor
 8b9f42d72019bde2f9fe0667762eaff3 Assembly-CSharp.dll:.OvrAvatarProjectorRenderComponent
 88cc9df3c6fc697bfbeacd24c0d6f2d7 UnityEngine.TestRunner.dll:UnityEngine.TestTools.BeforeAfterTestCommandState
