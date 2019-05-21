@@ -78,6 +78,7 @@
     <Compile Include="Assets\Avatar\MovimientoScripts\MoveTeleport.cs" />
     <Compile Include="Assets\Avatar\MovimientoScripts\TeleportMovement.cs" />
     <Compile Include="Assets\Avatar\ScriptsMecanicasCabeza\AnswerWithHead.cs" />
+    <Compile Include="Assets\EventsSystem.cs" />
     <Compile Include="Assets\Proyect_Controller\Scripts\Controlador\ControllerManager.cs" />
     <Compile Include="Assets\Proyect_Controller\Scripts\Controlador\SubtitleControl.cs" />
     <Compile Include="Assets\Proyect_Controller\Scripts\Guardado\DataManager.cs" />

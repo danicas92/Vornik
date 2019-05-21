@@ -11,6 +11,7 @@ TagManager:
   - AskCollider
   - MusicBox
   - TeapotPiece
+  - Event
   layers:
   - Default
   - TransparentFX

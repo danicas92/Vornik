@@ -38,6 +38,7 @@ public class SubtitleControl : MonoBehaviour
     public void Answer(bool answer)
     {
         flag += answer ? 0 : 1;
+        //Desactivar UI contestar
         StartCoroutine(nameof(ReadLineSound));
     }
 
@@ -46,8 +47,8 @@ public class SubtitleControl : MonoBehaviour
         if (flag == interactive)
         {
             answerScript.enabled = true;
-            //flag++;
-            //ReadLine();
+            text.text = "Contesta";
+            //Activar UI para contestar
         }//Accionar interaccion
         else if (flag < texts.Length)
             StartCoroutine(ReadLineSound());
@@ -66,7 +67,10 @@ public class SubtitleControl : MonoBehaviour
         audioSource.clip = clips[flag];
         audioSource.Play();
         yield return new WaitForSeconds(clips[flag].length);
-        flag++;
+        if (flag == interactive)
+            flag += 2;
+        else
+            flag++;
         ReadLine();
     }
 }
