@@ -29,6 +29,7 @@ public class ObjectGrabber : MonoBehaviour
         transform.parent = pivot;
         transform.SetPositionAndRotation(pivot.position,pivot.rotation);
         var rot = derecha ? rotacionAgarreDer : rotacionAgarreIzq;
+        //Debug.Log(rot);
         transform.Rotate(rot);
         Rigidbody rb = GetComponent<Rigidbody>();
         rb.useGravity = false;
