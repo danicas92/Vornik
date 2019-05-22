@@ -34,6 +34,7 @@ public class AgarreMano : MonoBehaviour
         if (colliderObject.CompareTag("Grab") && Input.GetAxis(InputName) >= 0.15f && _currentObject == null && !colliderObject.GetComponent<ObjectGrabber>().GetGrabbed())
         {
             _currentObject = colliderObject.gameObject;
+            GetComponentInChildren<ControllerCollidersGrab>().ResetGrab();
             _currentObject.GetComponent<ObjectGrabber>().Grab(pivot, isRight);
             _currentObject.GetComponent<Rigidbody>().useGravity = false;
         }

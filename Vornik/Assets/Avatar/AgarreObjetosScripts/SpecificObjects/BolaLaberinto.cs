@@ -8,6 +8,7 @@ public class BolaLaberinto : MonoBehaviour
     [SerializeField] private GameObject tapa;
 
     private Rigidbody rbBola;
+    private Vector3 positionInitial;
     private bool _haveRigidbody;
     private bool _open = false;
     private float rotacion = 0;
@@ -15,6 +16,7 @@ public class BolaLaberinto : MonoBehaviour
     private void Awake()
     {
         rbBola = GetComponent<Rigidbody>();
+        positionInitial = transform.localPosition;
     }
 
     void Update()
@@ -54,6 +56,14 @@ public class BolaLaberinto : MonoBehaviour
         if (other.CompareTag("Ball"))
         {
             _open = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Laberinto"))
+        {
+            if (transform.localPosition != positionInitial) transform.localPosition = positionInitial;
         }
     }
 }

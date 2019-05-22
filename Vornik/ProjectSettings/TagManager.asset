@@ -12,6 +12,7 @@ TagManager:
   - MusicBox
   - TeapotPiece
   - Event
+  - Laberinto
   layers:
   - Default
   - TransparentFX

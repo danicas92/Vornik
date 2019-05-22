@@ -25,37 +25,38 @@ public class StopFinger : MonoBehaviour {
         rotInic = indexAnt.transform.localRotation.eulerAngles;
     }
 
+    private bool CheckThumb()
+    {
+        if (indexAnt.transform.localRotation.eulerAngles.z < rotInic.z + 0.1f && indexAnt.transform.localRotation.eulerAngles.z > rotInic.z - 0.1f)
+            return false;
+        return true;
+    }
+
     private void Update()
     {
         multiplyer = Input.GetAxis(triggerButton);
         if (_isThumb)
         {
-            if (multiplyer == 1 && !collisionDetected && !otherCollided && indexAnt.transform.localRotation.z>_maxThumb)//Avanza
+            if (multiplyer == 1 && !collisionDetected && !otherCollided && multiplyerAnt < multiplyer)//Avanza
             {
                 indexAnt.Rotate(0, 0, -0.05f * 50);
+                multiplyerAnt += 0.05f;
             }
-            //RETOCAR PORQUE AVECES SE ATASCA EL DEDO
-            else if(multiplyer == 0)//Retrocede
-            {
-                if (indexAnt.transform.localRotation.z < rotInic.z && _maxRotacion >= indexAnt.transform.localRotation.z)
-                {
-                    indexAnt.Rotate(0, 0, 0.05f * 50);
-                }
+            else if(multiplyer == 0 && multiplyerAnt> multiplyer)
+            { 
+                indexAnt.Rotate(0, 0, 0.05f * 50);
+                multiplyerAnt -= 0.05f;
             }
         }
         else
         {
-            if (multiplyer > multiplyerAnt)//Avanza
+            if (multiplyer > multiplyerAnt && _maxRotacion == 0)//Avanza
             {
                 if (!collisionDetected && !otherCollided)
                 {
                     if (multiplyer - multiplyerAnt < 0.05f) return;
                     indexAnt.Rotate(0, 0, -0.05f * 50);
                     multiplyerAnt += 0.05f;
-                    //ANTERIOR
-                    //indexAnt.Rotate(0, 0, (-multiplyer + multiplyerAnt) * 50);
-                    //NO
-                    //_maxRotacion += multiplyer - multiplyerAnt;
                 }
             }
             else if (multiplyer < multiplyerAnt)//Retrocede
@@ -66,15 +67,12 @@ public class StopFinger : MonoBehaviour {
                     
                     indexAnt.Rotate(0, 0, 0.05f * 50);
                     multiplyerAnt -= 0.05f;
-                    //indexAnt.Rotate(0, 0, (-multiplyer + multiplyerAnt) * 50);
                 }
             }
             else if (multiplyer == 0)
             {
                 indexAnt.localRotation = Quaternion.Euler(rotInic);
             }
-            
-            //multiplyerAnt = multiplyer;
         }
     }
 
@@ -94,6 +92,7 @@ public class StopFinger : MonoBehaviour {
         {
             collisionDetected = false;
             _maxRotacion = 0;
+            if (_isThumb) _maxThumb = -0.4f;
             PlayLastFingers();
         }
     }
@@ -131,5 +130,11 @@ public class StopFinger : MonoBehaviour {
         _maxRotacion = 0;
         _maxThumb = -0.4f;
         collisionDetected = false;
+    }
+
+    public void ResetRotation()
+    {
+        indexAnt.localRotation = Quaternion.Euler(rotInic);
+        Reset();
     }
 }

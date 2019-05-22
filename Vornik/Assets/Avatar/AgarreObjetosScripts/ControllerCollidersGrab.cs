@@ -32,4 +32,10 @@ public class ControllerCollidersGrab : MonoBehaviour
         foreach (var finger in stopFingers)
             finger.Reset();
     }
+
+    public void ResetGrab()
+    {
+        foreach (var finger in stopFingers)
+            finger.ResetRotation();
+    }
 }
