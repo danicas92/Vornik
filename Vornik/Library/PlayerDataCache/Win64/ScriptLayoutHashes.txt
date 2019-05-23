@@ -2,7 +2,6 @@ Win64
 PlayerPath?
 C:/Users/d/Desktop/Nueva carpeta/Vornik.exe
 SceneListBegin?
-Assets/Scenes/Phase_1.unity
 Assets/Scenes/Memory2.unity
 SceneListEnd?
 71961c90b9e05ecb48b5969e15e1c70a Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.PostProcessLayer
@@ -83,6 +82,8 @@ c31603324da275845ef0e334c0da7196 Assembly-CSharp.dll:.CharacterCameraConstraint
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:OculusSampleFramework.PauseOnInputLoss
 964584b47463143da42961d88e7b82c7 Assembly-CSharp.dll:.GuardianBoundaryEnforcer
 36ae7cc3e989c6df9341b63a0b042603 Assembly-CSharp.dll:Oculus.Platform.Samples.VrBoardGame.BoardPosition
+71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
+71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
 6d87c2fdebb372d7340d22e63b4c5db7 Assembly-CSharp.dll:.EfectoLupa
 0e5bab27b440b5571316d8f83849552c Assembly-CSharp.dll:VLB.VolumetricLightBeam
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
@@ -340,6 +341,7 @@ b64df5204061416485f2c88a94a64db0 Assembly-CSharp.dll:.OVRMicInput
 e808e0575d536ea7ddf659880989784f Assembly-CSharp.dll:.GrabbingHand
 11206112ec687db2172d3c94b2bdc0f2 Oculus.VR.dll:.OVRGrabber
 b5be90544603fd5604bfcc31deb77313 Assembly-CSharp.dll:.ONSPPropagationGeometry
+fa113f640170e0d83c923425d82aa354 Assembly-CSharp.dll:.EventsSystem
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.OvrAvatarHand
 393c59b202b0e7b6b9fee142f9310de1 Assembly-CSharp.dll:Oculus.Platform.VoipAudioSourceHiLevel
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
