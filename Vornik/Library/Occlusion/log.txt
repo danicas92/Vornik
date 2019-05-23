@@ -1,19 +1,19 @@
-[18:56:00] INFO: Umbra 3 Optimizer version 3.3.22  (build: aa99894236119ba2e0eac5ca04d0133b3067a375)
-[18:56:00] INFO: T: 8 O: 2 H: 0.25 B: 100
-[18:56:00] INFO: Tile grid 16x8x12 (at -12,-4,-4) created for scene: 22 tiles (2 empties not included) in 0.031 seconds
-[18:56:00] INFO: Using 4 threads to compute 22 tiles, cache 4096 MB
-[18:56:01] INFO: Tile processing complete, computed 22 tiles
-[18:56:01] INFO: Strict view volumes: no
-[18:56:01] INFO: Filtered 3/6 inside clusters
-[18:56:01] INFO: Filtered 8/11 global clusters
-[18:56:01] INFO: 106/114 cells reachable after global analysis
-[18:56:01] INFO: collapsed leaf tiles 24 => 1
-[18:56:01] INFO: Generating LOD tiles using 4 threads
-[18:56:01] INFO: Connecting LOD tiles
-[18:56:01] INFO: Compressing lists
-[18:56:01] INFO: Average index range size: 74.64
-[18:56:01] INFO: object list: 700 B, cluster list: 0 B
-[18:56:01] INFO: created tome with 1 tiles, 203 targets and 0 gates
-[18:56:01] INFO: Checking cache...
-[18:56:01] INFO: Cache check finished
-[18:56:01] DEBUG: Total allocations 57962, peak 892 (size 6 MB 595 kB 898 B)
+[02:32:27] INFO: Umbra 3 Optimizer version 3.3.22  (build: aa99894236119ba2e0eac5ca04d0133b3067a375)
+[02:32:27] INFO: T: 8 O: 2 H: 0.25 B: 100
+[02:32:27] INFO: Tile grid 16x8x12 (at -12,-4,-4) created for scene: 24 tiles (0 empties not included) in 0.023 seconds
+[02:32:27] INFO: Using 4 threads to compute 24 tiles, cache 4096 MB
+[02:32:27] INFO: Tile processing complete, computed 24 tiles
+[02:32:27] INFO: Strict view volumes: no
+[02:32:27] INFO: Filtered 0/1 inside clusters
+[02:32:27] INFO: Filtered 0/1 global clusters
+[02:32:27] INFO: 100/100 cells reachable after global analysis
+[02:32:28] INFO: collapsed leaf tiles 24 => 1
+[02:32:28] INFO: Generating LOD tiles using 4 threads
+[02:32:28] INFO: Connecting LOD tiles
+[02:32:28] INFO: Compressing lists
+[02:32:28] INFO: Average index range size: 78.05
+[02:32:28] INFO: object list: 688 B, cluster list: 0 B
+[02:32:28] INFO: created tome with 1 tiles, 216 targets and 0 gates
+[02:32:28] INFO: Checking cache...
+[02:32:28] INFO: Cache check finished
+[02:32:28] DEBUG: Total allocations 66027, peak 901 (size 7 MB 372 kB 623 B)
