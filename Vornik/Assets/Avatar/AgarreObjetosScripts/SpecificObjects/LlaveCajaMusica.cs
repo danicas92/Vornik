@@ -8,13 +8,31 @@ public class LlaveCajaMusica : MonoBehaviour
     [SerializeField] private Vector3 rotation = new Vector3(0, 0, 270);
     [SerializeField] private Transform tapa;
 
+    private Vector3 posInit;
+    private Quaternion rotInic;
     private bool _rotate = false;
+    private bool activate = false;
     private float _keyRotation = 0;
     private bool _open;
     private float _tapRotation = 0;
 
+    private void Awake()
+    {
+        posInit = transform.position;
+        rotInic = transform.rotation;
+    }
+
     private void Update()
     {
+        if (!activate && GetComponent<ObjectGrabber>().GetGrabbed())
+            activate = true;
+
+        if (activate && !_rotate && !_open && transform.position != posInit && !GetComponent<ObjectGrabber>().GetGrabbed())
+        {
+            transform.SetPositionAndRotation(posInit, rotInic);
+            GetComponent<Rigidbody>().velocity = Vector3.zero;
+        }
+
         if (_rotate && _keyRotation < 360)
         {
             transform.Rotate(0, 2, 0);

@@ -87,6 +87,10 @@
     <Compile Include="Assets\Proyect_Controller\Scripts\Postprocesado\Desenfoque_Focus.cs" />
     <Compile Include="Assets\Proyect_Controller\Scripts\Postprocesado\DesenfoqueIluminación.cs" />
     <Compile Include="Assets\Proyect_Controller\Scripts\Postprocesado\PostProcessingControl.cs" />
+    <Compile Include="Assets\Scripts\ButtonInfo.cs" />
+    <Compile Include="Assets\Scripts\ControladorCandado.cs" />
+    <Compile Include="Assets\Scripts\ControladorRueda.cs" />
+    <Compile Include="Assets\Scripts\DesactivaPared.cs" />
     <Compile Include="Assets\Unity\Oculus\AudioManager\Scenes\Scripts\TestScript.cs" />
     <Compile Include="Assets\Unity\Oculus\AudioManager\Scripts\Audio\AmbienceEmitter.cs" />
     <Compile Include="Assets\Unity\Oculus\AudioManager\Scripts\Audio\AudioManager.cs" />
