@@ -9,6 +9,8 @@ public class Linterna : MonoBehaviour
 
     private ObjectGrabber _objectGrabber;
     private bool active = false;
+    private string _buttDer = "Oculus_CrossPlatform_Button2";
+    private string _buttIzq = "Oculus_CrossPlatform_Button4";
 
     private void Awake()
     {
@@ -17,14 +19,17 @@ public class Linterna : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown("Oculus_CrossPlatform_Button2"))
-        {
-            active = !active;
-            light.SetActive(active);
-        }
-
         if (_objectGrabber.GetGrabbed())
-            return; 
+        {
+            var hand = _objectGrabber.GetHandGrabbing;
+            if ((Input.GetButtonDown(_buttDer) && hand.GetComponent<AgarreMano>().GetMano()) || (Input.GetButtonDown(_buttIzq) && !hand.GetComponent<AgarreMano>().GetMano()))
+            {
+                active = !active;
+                light.SetActive(active);
+            }
+            return;
+        }
+            
 
         if (transform.position != pivote.position)
         {

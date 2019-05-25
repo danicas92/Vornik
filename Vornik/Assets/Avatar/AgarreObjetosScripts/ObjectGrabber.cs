@@ -16,6 +16,8 @@ public class ObjectGrabber : MonoBehaviour
 
     private float MultiplyVeloc = 1.25f;//Multiplicador de la velocidad de lanzamiento
 
+    public GameObject GetHandGrabbing => handGrabbing;
+
     public void Update()
     {
         _lastPosition = transform.position;

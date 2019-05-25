@@ -13,6 +13,8 @@ public class AgarreMano : MonoBehaviour
     private GameObject _currentObject;
     private Vector3 _lastPosition;
 
+    public bool GetMano() => isRight;
+
     void Update()
     {
         if (_currentObject !=null && _currentObject.GetComponent<ObjectGrabber>() == null)

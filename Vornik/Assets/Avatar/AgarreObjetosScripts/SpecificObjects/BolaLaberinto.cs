@@ -6,6 +6,7 @@ public class BolaLaberinto : MonoBehaviour
 {
     [SerializeField] private ObjectGrabber laberintoObjectGrabber;
     [SerializeField] private GameObject tapa;
+    [SerializeField] private GameObject taza;
 
     private Rigidbody rbBola;
     private Vector3 positionInitial;
@@ -35,6 +36,11 @@ public class BolaLaberinto : MonoBehaviour
 
         if (_open && rotacion < 90)
         {
+            if (!taza.activeSelf)
+            {
+                taza.SetActive(true);
+                taza.transform.parent = null;
+            }
             tapa.transform.Rotate(-1, 0, 0);
             rotacion++;
 

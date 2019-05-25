@@ -87,6 +87,7 @@
     <Compile Include="Assets\Proyect_Controller\Scripts\Postprocesado\Desenfoque_Focus.cs" />
     <Compile Include="Assets\Proyect_Controller\Scripts\Postprocesado\DesenfoqueIluminación.cs" />
     <Compile Include="Assets\Proyect_Controller\Scripts\Postprocesado\PostProcessingControl.cs" />
+    <Compile Include="Assets\Scripts\ActivatePictureWithCup.cs" />
     <Compile Include="Assets\Scripts\ButtonInfo.cs" />
     <Compile Include="Assets\Scripts\ButtonPressed.cs" />
     <Compile Include="Assets\Scripts\ControladorCandado.cs" />
