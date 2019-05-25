@@ -18,13 +18,15 @@ public class EventsSystem : MonoBehaviour
     //Variables necesarias para Sanja, aparicion 1
     public EventsSystem eventSystemSound;
     //Juguetes aparicion 2
-    public GameObject[] toys;
+    public Rigidbody[] toys;
+    public VLB_Samples.Rotater[] rotater;
+    public float max, min;
 
     private void Update()
     {
         if (activeSound && eventType == EventType.Sound)
         {
-            audioSourcePlayer.volume = Mathf.Lerp(audioSourcePlayer.volume, 0.8f, Time.deltaTime * velocity);
+            audioSourcePlayer.volume = Mathf.Lerp(audioSourcePlayer.volume, 0.4f, Time.deltaTime * velocity);
         }
         if (!activeSound && active && eventType == EventType.Sound)
         {
@@ -62,9 +64,11 @@ public class EventsSystem : MonoBehaviour
                 eventSystemSound.EndSound();
                 break;
             case EventType.Aparition2:
+                ActivateToys();
                 break;
             case EventType.EndPuzzle:
                 break;
+           
         }
     }
 
@@ -72,4 +76,25 @@ public class EventsSystem : MonoBehaviour
     {
         activeSound = false;
     }
+
+    void ActivateToys()
+    {
+        for (int i = 0; i < toys.Length; i++)
+        {
+            rotater[i].enabled = true;
+            Vector3 newPosition = new Vector3(toys[i].gameObject.transform.position.x, Random.Range(min, max), toys[i].gameObject.transform.position.z);
+            toys[i].useGravity = false;
+            toys[i].gameObject.transform.position = newPosition;
+        }
+    }
+
+    public void DesactivateToys()
+    {
+        for (int i = 0; i < toys.Length; i++)
+        {
+            rotater[i].enabled = false;
+            toys[i].useGravity = true;
+        }
+    }
+  
 }
