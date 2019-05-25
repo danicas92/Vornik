@@ -11,7 +11,8 @@ public class DesactivaPared : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!collide && other.GetComponentInChildren<TrozoTetera>() != null)
+        var trozoTetera = other.GetComponentInChildren<TrozoTetera>();
+        if (!collide && trozoTetera != null && trozoTetera.GetHijos()==3)
         {
             DisableGrabbing(other.gameObject);
             collide = true;
@@ -20,8 +21,9 @@ public class DesactivaPared : MonoBehaviour
 
     private void DisableGrabbing(GameObject tetera)
     {
-        tetera.GetComponent<ObjectGrabber>().Throw(transform.position, transform.position, true);
-        tetera.transform.SetParent(transform);
+        tetera.GetComponent<ObjectGrabber>().Throw(Vector3.zero, Vector3.zero, false);
+        tetera.transform.SetPositionAndRotation(transform.position,transform.rotation);
+        //tetera.transform.SetParent(transform);
         Destroy(tetera.GetComponent<ObjectGrabber>());
         ChangeWalls();
     }
