@@ -2705,7 +2705,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 551267394}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &394252164
 Light:
@@ -3145,8 +3145,8 @@ Transform:
   - {fileID: 1254963304}
   - {fileID: 2040002399}
   - {fileID: 920721754}
-  - {fileID: 394252163}
   - {fileID: 1055652005}
+  - {fileID: 394252163}
   - {fileID: 259534905}
   - {fileID: 1559375993}
   m_Father: {fileID: 0}
@@ -7603,7 +7603,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 551267394}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &1055652006
 Light:
@@ -9211,16 +9211,6 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1782422351478839166, guid: 17d0a38d7f41ac140b61da35df684357,
-        type: 3}
-      propertyPath: visualizeRoom
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1782422351478839166, guid: 17d0a38d7f41ac140b61da35df684357,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1782422349965299486, guid: 17d0a38d7f41ac140b61da35df684357,
         type: 3}
       propertyPath: m_IsActive
@@ -9230,6 +9220,16 @@ PrefabInstance:
         type: 3}
       propertyPath: near
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782422351478839166, guid: 17d0a38d7f41ac140b61da35df684357,
+        type: 3}
+      propertyPath: visualizeRoom
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782422351478839166, guid: 17d0a38d7f41ac140b61da35df684357,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17d0a38d7f41ac140b61da35df684357, type: 3}
