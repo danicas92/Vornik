@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EventsSystem : MonoBehaviour
 {
-    public enum EventType {Sound, Aparition1, Aparition2, EndPuzzle };
+    public enum EventType {Sound, Aparition1, Aparition2, Lloro, EndPuzzle };
     public EventType eventType;
 
     bool active = false;
@@ -20,17 +20,34 @@ public class EventsSystem : MonoBehaviour
     //Juguetes aparicion 2
     public Rigidbody[] toys;
     public VLB_Samples.Rotater[] rotater;
+    public ComportamientoObjetos[] comportamientoObj;
     public float max, min;
+    public GameObject eventSound;
+    bool desactiveToys = false;
+    //Lloro
+    public GameObject SanjaCry;
 
     private void Update()
     {
-        if (activeSound && eventType == EventType.Sound)
+        Debug.Log(audioSourcePlayer.volume);
+        if (activeSound && (eventType == EventType.Sound || eventType == EventType.Aparition2))
         {
             audioSourcePlayer.volume = Mathf.Lerp(audioSourcePlayer.volume, 0.4f, Time.deltaTime * velocity);
         }
         if (!activeSound && active && eventType == EventType.Sound)
         {
             audioSourcePlayer.volume = Mathf.Lerp(audioSourcePlayer.volume, 0f, Time.deltaTime * velocity*10);
+            if (audioSourcePlayer.volume <= 0.001f)
+            {
+                audioSourcePlayer.volume = 0;
+                audioSourcePlayer.Stop();
+                audioSourcePlayer.loop = false;
+                Destroy(this.gameObject);
+            }
+        }
+        if (desactiveToys)
+        {
+            audioSourcePlayer.volume = Mathf.Lerp(audioSourcePlayer.volume, 0f, Time.deltaTime * velocity * 15); 
             if (audioSourcePlayer.volume <= 0.001f)
             {
                 audioSourcePlayer.volume = 0;
@@ -64,7 +81,15 @@ public class EventsSystem : MonoBehaviour
                 eventSystemSound.EndSound();
                 break;
             case EventType.Aparition2:
+                SanjaCry.SetActive(false);
+                activeSound = true;
+                audioSourcePlayer.clip = audioClip;
+                audioSourcePlayer.Play();
+                audioSourcePlayer.loop = true;
                 ActivateToys();
+                break;
+            case EventType.Lloro:
+                SanjaCry.SetActive(true);
                 break;
             case EventType.EndPuzzle:
                 break;
@@ -90,11 +115,16 @@ public class EventsSystem : MonoBehaviour
 
     public void DesactivateToys()
     {
-        for (int i = 0; i < toys.Length; i++)
+        for (int i = 0; i < toys.Length-4; i++)
         {
+            comportamientoObj[i].enabled = false;
             rotater[i].enabled = false;
             toys[i].useGravity = true;
+            toys[i].isKinematic = false;
         }
+        desactiveToys = true;
+        activeSound = false;
+        Destroy(eventSound);
     }
   
 }

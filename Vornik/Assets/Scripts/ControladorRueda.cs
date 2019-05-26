@@ -6,11 +6,13 @@ public class ControladorRueda : MonoBehaviour
 {
     [SerializeField] private ControladorCandado[] controladoresCandado;
     [SerializeField] private GameObject Matrioshka;
+    [SerializeField] private AudioSource audio;
 
     private int contador;
 
     public void Check()
     {
+        audio.Play();
         foreach (var controlador in controladoresCandado)
         {
             if (controlador.GetCorrent()) contador++;

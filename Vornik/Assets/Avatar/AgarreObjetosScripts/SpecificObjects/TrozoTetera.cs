@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class TrozoTetera : MonoBehaviour
 {
+    public EventsSystem eventSystem;
+
     [SerializeField] private int identificador;
 
     private int hijos = 0;
-
+    private bool _todoUnido;
     public int GetHijos() => hijos;
     public void SetHijos(int hijosSum) => hijos += hijosSum;
     public int GetIdentificador() { return identificador; }
@@ -25,6 +27,8 @@ public class TrozoTetera : MonoBehaviour
             GetComponent<ObjectGrabber>().Throw(transform.position,transform.position,false);
             Destroy(GetComponent<ObjectGrabber>());
             Destroy(GetComponent<Rigidbody>());
+            Destroy(GetComponent<VLB_Samples.Rotater>());
+            Destroy(GetComponent<ComportamientoObjetos>());
             transform.parent = other.transform;
             transform.localPosition = Vector3.zero;
             transform.localRotation = Quaternion.Euler(Vector3.zero);
@@ -32,7 +36,15 @@ public class TrozoTetera : MonoBehaviour
             RemoveCollidersHijos();
             RemoveCollsionWithFingers();
         }
-        
+
+        if (identificador == 1 && hijos == 3 && !_todoUnido)
+        {
+            Destroy(GetComponent<VLB_Samples.Rotater>());
+            Destroy(GetComponent<ComportamientoObjetos>());
+            eventSystem.DesactivateToys();
+            _todoUnido = true;
+        }
+
     }
 
     private void RemoveCollidersHijos()

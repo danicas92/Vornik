@@ -92,6 +92,7 @@
     <Compile Include="Assets\Scripts\ActivatePictureWithCup.cs" />
     <Compile Include="Assets\Scripts\ButtonInfo.cs" />
     <Compile Include="Assets\Scripts\ButtonPressed.cs" />
+    <Compile Include="Assets\Scripts\ComportamientoObjetos.cs" />
     <Compile Include="Assets\Scripts\ControladorCandado.cs" />
     <Compile Include="Assets\Scripts\ControladorRueda.cs" />
     <Compile Include="Assets\Scripts\DesactivaPared.cs" />
