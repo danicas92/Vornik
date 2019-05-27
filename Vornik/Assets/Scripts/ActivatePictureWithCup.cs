@@ -22,6 +22,6 @@ public class ActivatePictureWithCup : MonoBehaviour
         }
     }
 
-    private void ActivatePicture() { /*picture.SetActive(true);*/ Debug.Log("COLOCADO"); }
+    private void ActivatePicture() { picture.SetActive(true); }
 
 }

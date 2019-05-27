@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class DesactivaPared : MonoBehaviour
 {
-    [SerializeField] private GameObject[] paredDesactivar;
-    [SerializeField] private GameObject paredActivar;
+    [SerializeField] private Transform puerta;
+    [SerializeField] private GameObject fotoZledic;
 
     private bool collide = false;
 
@@ -23,16 +23,9 @@ public class DesactivaPared : MonoBehaviour
     {
         tetera.GetComponent<ObjectGrabber>().Throw(Vector3.zero, Vector3.zero, false);
         tetera.transform.SetPositionAndRotation(transform.position,transform.rotation);
-        //tetera.transform.SetParent(transform);
         Destroy(tetera.GetComponent<ObjectGrabber>());
-        ChangeWalls();
+        puerta.Rotate(0, 0, -82);
+        fotoZledic.SetActive(true);
     }
 
-    private void ChangeWalls()
-    {
-        foreach (var des in paredDesactivar)
-            des.SetActive(false);
-        //paredActivar.SetActive(true);
-        this.enabled = false;
-    }
 }

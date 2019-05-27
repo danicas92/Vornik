@@ -8,6 +8,7 @@ public class LlaveCajaMusica : MonoBehaviour
     [SerializeField] private Vector3 rotation = new Vector3(0, 0, 270);
     [SerializeField] private Transform tapa;
     [SerializeField] private GameObject taza;
+    [SerializeField] private GameObject UI;
 
     private Vector3 posInit;
     private Quaternion rotInic;
@@ -40,6 +41,7 @@ public class LlaveCajaMusica : MonoBehaviour
             _keyRotation += 2;
             _open = _keyRotation == 360? true : false;
             taza.SetActive(true);
+            Destroy(UI);
         }
 
         if (_open && _tapRotation<90)

@@ -7,6 +7,7 @@ using TMPro;
 public class SubtitleControl : MonoBehaviour
 {
     [SerializeField] private AnswerWithHead answerScript;
+    [SerializeField] private GameObject[] UI;
 
     [Header("Entradas para la configuración de los subtitulos")]
     [Tooltip("Array de strings para modificar de forma automática")]
@@ -38,6 +39,8 @@ public class SubtitleControl : MonoBehaviour
     public void Answer(bool answer)
     {
         flag += answer ? 0 : 1;
+        foreach (var ui in UI)
+            Destroy(ui);
         //Desactivar UI contestar
         StartCoroutine(nameof(ReadLineSound));
     }
@@ -47,7 +50,9 @@ public class SubtitleControl : MonoBehaviour
         if (flag == interactive)
         {
             answerScript.enabled = true;
-            text.text = "Contesta";
+            text.text = "";
+            foreach (var ui in UI)
+                ui.SetActive(true);
             //Activar UI para contestar
         }//Accionar interaccion
         else if (flag < texts.Length)

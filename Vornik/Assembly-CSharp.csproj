@@ -78,14 +78,15 @@
     <Compile Include="Assets\Avatar\MovimientoScripts\MoveTeleport.cs" />
     <Compile Include="Assets\Avatar\MovimientoScripts\TeleportMovement.cs" />
     <Compile Include="Assets\Avatar\ScriptsMecanicasCabeza\AnswerWithHead.cs" />
-    <Compile Include="Assets\ButtonMenu.cs" />
-    <Compile Include="Assets\EventsSystem.cs" />
-    <Compile Include="Assets\MenuRay.cs" />
+    <Compile Include="Assets\Proyect_Controller\Scripts\ButtonMenu.cs" />
     <Compile Include="Assets\Proyect_Controller\Scripts\Controlador\ControllerManager.cs" />
     <Compile Include="Assets\Proyect_Controller\Scripts\Controlador\SubtitleControl.cs" />
+    <Compile Include="Assets\Proyect_Controller\Scripts\ControllerScene.cs" />
+    <Compile Include="Assets\Proyect_Controller\Scripts\EventsSystem.cs" />
     <Compile Include="Assets\Proyect_Controller\Scripts\Guardado\DataManager.cs" />
     <Compile Include="Assets\Proyect_Controller\Scripts\Guardado\StateGame.cs" />
     <Compile Include="Assets\Proyect_Controller\Scripts\Lupa\EfectoLupa.cs" />
+    <Compile Include="Assets\Proyect_Controller\Scripts\MenuRay.cs" />
     <Compile Include="Assets\Proyect_Controller\Scripts\Postprocesado\Desenfoque_Focus.cs" />
     <Compile Include="Assets\Proyect_Controller\Scripts\Postprocesado\DesenfoqueIluminación.cs" />
     <Compile Include="Assets\Proyect_Controller\Scripts\Postprocesado\PostProcessingControl.cs" />
@@ -96,6 +97,7 @@
     <Compile Include="Assets\Scripts\ControladorCandado.cs" />
     <Compile Include="Assets\Scripts\ControladorRueda.cs" />
     <Compile Include="Assets\Scripts\DesactivaPared.cs" />
+    <Compile Include="Assets\Scripts\UIObjectScript.cs" />
     <Compile Include="Assets\Unity\Oculus\AudioManager\Scenes\Scripts\TestScript.cs" />
     <Compile Include="Assets\Unity\Oculus\AudioManager\Scripts\Audio\AmbienceEmitter.cs" />
     <Compile Include="Assets\Unity\Oculus\AudioManager\Scripts\Audio\AudioManager.cs" />

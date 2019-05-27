@@ -10,12 +10,26 @@ public class AnswerWithHead : MonoBehaviour
     [SerializeField] private bool _isCollidin = false;
     [SerializeField] private SubtitleControl subtitleControl;
 
+    private string _buttDer = "Oculus_CrossPlatform_Button2";
+    private string _buttIzq = "Oculus_CrossPlatform_Button4";
     enum Answer { Yes, No, None }
     private Answer _answer = Answer.None;
 
     private void Update()
     {
         if (_answer != Answer.None) enabled = false;
+
+        if (Input.GetButtonDown(_buttDer))
+        {
+            _answer = Answer.No;
+            return;
+        }
+
+        if (Input.GetButtonDown(_buttIzq))
+        {
+            _answer = Answer.Yes;
+            return;
+        }
 
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity))
