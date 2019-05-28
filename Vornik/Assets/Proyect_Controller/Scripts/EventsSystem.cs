@@ -22,7 +22,7 @@ public class EventsSystem : MonoBehaviour
     public VLB_Samples.Rotater[] rotater;
     public ComportamientoObjetos[] comportamientoObj;
     public float max, min;
-    public GameObject eventSound, apagon;
+    public GameObject eventSound, apagon, door;
     bool desactiveToys = false;
     //Lloro
     public GameObject SanjaCry;
@@ -93,15 +93,17 @@ public class EventsSystem : MonoBehaviour
 
     IEnumerator ObjectFly()
     {
+        float timer = apagon.GetComponent<AudioSource>().clip.length;
         apagon.SetActive(true);
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(timer+0.4f);
         SanjaCry.SetActive(false);
         activeSound = true;
         audioSourcePlayer.clip = audioClip;
         audioSourcePlayer.Play();
         audioSourcePlayer.loop = true;
         ActivateToys();
-        yield return new WaitForSeconds(0.1f);
+        apagon.GetComponent<AudioSource>().Play();
+        yield return new WaitForSeconds(timer);
         apagon.SetActive(false);
     }
 
