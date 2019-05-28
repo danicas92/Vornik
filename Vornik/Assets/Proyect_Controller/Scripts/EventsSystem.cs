@@ -22,7 +22,7 @@ public class EventsSystem : MonoBehaviour
     public VLB_Samples.Rotater[] rotater;
     public ComportamientoObjetos[] comportamientoObj;
     public float max, min;
-    public GameObject eventSound;
+    public GameObject eventSound, apagon;
     bool desactiveToys = false;
     //Lloro
     public GameObject SanjaCry;
@@ -80,12 +80,7 @@ public class EventsSystem : MonoBehaviour
                 eventSystemSound.EndSound();
                 break;
             case EventType.Aparition2:
-                SanjaCry.SetActive(false);
-                activeSound = true;
-                audioSourcePlayer.clip = audioClip;
-                audioSourcePlayer.Play();
-                audioSourcePlayer.loop = true;
-                ActivateToys();
+                StartCoroutine(ObjectFly());
                 break;
             case EventType.Lloro:
                 SanjaCry.SetActive(true);
@@ -94,6 +89,20 @@ public class EventsSystem : MonoBehaviour
                 break;
            
         }
+    }
+
+    IEnumerator ObjectFly()
+    {
+        apagon.SetActive(true);
+        yield return new WaitForSeconds(0.1f);
+        SanjaCry.SetActive(false);
+        activeSound = true;
+        audioSourcePlayer.clip = audioClip;
+        audioSourcePlayer.Play();
+        audioSourcePlayer.loop = true;
+        ActivateToys();
+        yield return new WaitForSeconds(0.1f);
+        apagon.SetActive(false);
     }
 
     public void EndSound()
