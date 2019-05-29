@@ -17,6 +17,7 @@ public class EventsSystem : MonoBehaviour
 
     //Variables necesarias para Sanja, aparicion 1
     public EventsSystem eventSystemSound;
+    public SanjaBehaviur sanjaBehaviur;
     //Juguetes aparicion 2
     public Rigidbody[] toys;
     public VLB_Samples.Rotater[] rotater;
@@ -77,7 +78,7 @@ public class EventsSystem : MonoBehaviour
                 audioSourcePlayer.loop = true;
                 break;
             case EventType.Aparition1:
-                eventSystemSound.EndSound();
+                sanjaBehaviur.Run();
                 break;
             case EventType.Aparition2:
                 StartCoroutine(ObjectFly());

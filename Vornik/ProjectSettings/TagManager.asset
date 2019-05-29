@@ -13,6 +13,7 @@ TagManager:
   - TeapotPiece
   - Event
   - Laberinto
+  - EndSanja
   layers:
   - Default
   - TransparentFX
