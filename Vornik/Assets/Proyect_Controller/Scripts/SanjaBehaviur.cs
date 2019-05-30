@@ -5,17 +5,15 @@ using UnityEngine;
 public class SanjaBehaviur : MonoBehaviour
 {
 
-    private AudioSource audioSource;
+    public AudioSource audioSource;
     public AudioClip[] footSteps;
     public EventsSystem eventSystem;
+    public Animator idle;
     private int flag=0;
     private bool isRun = false;
     public float velocity;
 
-    private void Awake()
-    {
-        audioSource = GetComponent<AudioSource>();
-    }
+
 
     private void FixedUpdate()
     {
@@ -28,6 +26,7 @@ public class SanjaBehaviur : MonoBehaviour
     public void Run()
     {
         //Soltar dibujo y animacion correr
+        idle.SetTrigger("Run");
         audioSource.loop = false;
         audioSource.clip = footSteps[0];
         isRun = true;

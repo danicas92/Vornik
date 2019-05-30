@@ -26,7 +26,7 @@ public class EventsSystem : MonoBehaviour
     public GameObject eventSound, apagon, door;
     bool desactiveToys = false;
     //Lloro
-    public GameObject SanjaCry;
+    public GameObject SanjaCry,Sanja;
 
     private void Update()
     {
@@ -94,10 +94,13 @@ public class EventsSystem : MonoBehaviour
 
     IEnumerator ObjectFly()
     {
+        Sanja.GetComponent<Animator>().SetTrigger("Cabeza");
+        SanjaCry.SetActive(false);
+        yield return new WaitForSeconds(0.5f);
         float timer = apagon.GetComponent<AudioSource>().clip.length;
         apagon.SetActive(true);
         yield return new WaitForSeconds(timer+0.4f);
-        SanjaCry.SetActive(false);
+        Destroy(Sanja);
         activeSound = true;
         audioSourcePlayer.clip = audioClip;
         audioSourcePlayer.Play();
