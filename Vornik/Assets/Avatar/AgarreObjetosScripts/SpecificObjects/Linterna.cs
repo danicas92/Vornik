@@ -6,9 +6,10 @@ public class Linterna : MonoBehaviour
 {
     [SerializeField] private Transform pivote;
     [SerializeField] private GameObject light;
+    [SerializeField] private GameObject marker;
 
     private ObjectGrabber _objectGrabber;
-    private bool active = false;
+    private bool _active = false;
     private string _buttDer = "Oculus_CrossPlatform_Button2";
     private string _buttIzq = "Oculus_CrossPlatform_Button4";
 
@@ -21,21 +22,23 @@ public class Linterna : MonoBehaviour
     {
         if (_objectGrabber.GetGrabbed())
         {
+            marker.SetActive (false);
             var hand = _objectGrabber.GetHandGrabbing;
             if ((Input.GetButtonDown(_buttDer) && hand.GetComponent<AgarreMano>().GetMano()) || (Input.GetButtonDown(_buttIzq) && !hand.GetComponent<AgarreMano>().GetMano()))
             {
-                active = !active;
-                light.SetActive(active);
+                _active = !_active;
+                light.SetActive(_active);
             }
             return;
         }
-            
+        marker.SetActive(true);
+
 
         if (transform.position != pivote.position)
         {
             transform.position = pivote.position;
             transform.rotation = Quaternion.Euler(90,0,0);
-            active = false;
+            _active = false;
             light.SetActive(false);
         }
     }

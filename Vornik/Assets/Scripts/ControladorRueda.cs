@@ -6,6 +6,7 @@ public class ControladorRueda : MonoBehaviour
 {
     [SerializeField] private ControladorCandado[] controladoresCandado;
     [SerializeField] private GameObject Matrioshka;
+    [SerializeField] private GameObject Jarron;
     [SerializeField] private AudioSource audio;
 
     private int contador;
@@ -21,6 +22,7 @@ public class ControladorRueda : MonoBehaviour
         {
             transform.Rotate(new Vector3(0,0,-90));
             Matrioshka.tag = "Grab";
+            Jarron.tag = "Grab";
             this.enabled = false;
         }
         contador = 0;

@@ -17,6 +17,8 @@ public class AnswerWithHead : MonoBehaviour
 
     private void Update()
     {
+
+        
         if (_answer != Answer.None) enabled = false;
 
         if (Input.GetButtonDown(_buttDer))
@@ -48,6 +50,7 @@ public class AnswerWithHead : MonoBehaviour
             if (collisions.Count > 2)
                 _answer = CompareAnswers();
         }
+        
 
     }
 

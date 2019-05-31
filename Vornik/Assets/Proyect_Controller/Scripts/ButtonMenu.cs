@@ -15,13 +15,13 @@ public class ButtonMenu : MonoBehaviour
         switch (typeButton)
         {
             case TypeButton.NuevaPartida:
-                 operation = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                 break;
             case TypeButton.Continuar:
-                 operation = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);//leer del archivo
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);//leer del archivo
                 break;
             case TypeButton.Creditos:
-                operation = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);//Poner escena de créditos
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);//Poner escena de créditos
                 break;
             case TypeButton.Salir:
                 Application.Quit();

@@ -157,8 +157,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.4947984, y: 1, z: 1}
-  m_Center: {x: -0.83937275, y: 0, z: 0}
+  m_Size: {x: 2.4947984, y: 0.7618418, z: 1}
+  m_Center: {x: -0.83937275, y: -0.045799732, z: 0}
 --- !u!1 &361999512
 GameObject:
   m_ObjectHideFlags: 0
@@ -848,8 +848,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.9733183, y: 1.2875798, z: 1}
-  m_Center: {x: 1.5540522, y: -0.03590715, z: 0}
+  m_Size: {x: 3.9733183, y: 0.9211838, z: 1}
+  m_Center: {x: 1.5540522, y: -0.054227233, z: 0}
 --- !u!1 &659340588
 GameObject:
   m_ObjectHideFlags: 0
@@ -875,7 +875,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 659340588}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalPosition: {x: -0.07, y: -1.39, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2002229361}
@@ -892,8 +892,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.217693, y: 1.4247186, z: 1}
-  m_Center: {x: 0.10350096, y: 0.21235931, z: 0}
+  m_Size: {x: 2.217693, y: 1.113281, z: 1}
+  m_Center: {x: 0.10350096, y: 0.3680781, z: 0}
 --- !u!1001 &787234278
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1465,8 +1465,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.3454642, y: 1.1009212, z: 1}
-  m_Center: {x: 0.05437255, y: -0.050460577, z: 0}
+  m_Size: {x: 2.3454642, y: 1.0265183, z: 1}
+  m_Center: {x: 0.05437255, y: -0.14149785, z: 0}
 --- !u!1 &1816021990
 GameObject:
   m_ObjectHideFlags: 0
@@ -1579,7 +1579,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2002229360}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.10758066, y: 1.0436308, z: 3.0099998}
+  m_LocalPosition: {x: 0.10758066, y: 1.4, z: 2.825}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 647688636}
@@ -1680,7 +1680,7 @@ PrefabInstance:
     - target: {fileID: 6894477166062612055, guid: 541997d88716b004eb27b524c5f491d7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 541997d88716b004eb27b524c5f491d7, type: 3}

@@ -100,6 +100,7 @@
     <Compile Include="Assets\Scripts\ControladorCandado.cs" />
     <Compile Include="Assets\Scripts\ControladorRueda.cs" />
     <Compile Include="Assets\Scripts\DesactivaPared.cs" />
+    <Compile Include="Assets\Scripts\JarronScript.cs" />
     <Compile Include="Assets\Scripts\UIObjectScript.cs" />
     <Compile Include="Assets\Unity\Oculus\AudioManager\Scenes\Scripts\TestScript.cs" />
     <Compile Include="Assets\Unity\Oculus\AudioManager\Scripts\Audio\AmbienceEmitter.cs" />
