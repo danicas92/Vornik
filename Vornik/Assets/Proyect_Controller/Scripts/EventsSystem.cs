@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EventsSystem : MonoBehaviour
 {
@@ -27,6 +28,9 @@ public class EventsSystem : MonoBehaviour
     bool desactiveToys = false;
     //Lloro
     public GameObject SanjaCry,Sanja;
+    //Final
+    public PostProcessingControl postProcessingControl;
+
 
     private void Update()
     {
@@ -87,15 +91,25 @@ public class EventsSystem : MonoBehaviour
                 SanjaCry.SetActive(true);
                 break;
             case EventType.EndPuzzle:
+                StartCoroutine(EndScene());
                 break;
            
         }
+    }
+
+    IEnumerator EndScene()
+    {
+        postProcessingControl.postProcessingProfiles[1].SetActive(true);
+        postProcessingControl.ActivateWhite(false);
+        yield return new WaitForSeconds(4f);
+        SceneManager.LoadScene(1);
     }
 
     IEnumerator ObjectFly()
     {
         Sanja.GetComponent<Animator>().SetTrigger("Cabeza");
         SanjaCry.SetActive(false);
+        door.transform.Rotate(0, 0, 85);
         yield return new WaitForSeconds(0.5f);
         float timer = apagon.GetComponent<AudioSource>().clip.length;
         apagon.SetActive(true);
@@ -136,6 +150,7 @@ public class EventsSystem : MonoBehaviour
             toys[i].useGravity = true;
             toys[i].isKinematic = false;
         }
+        door.transform.Rotate(0, 0, -85);
         desactiveToys = true;
         activeSound = false;
         Destroy(eventSound);

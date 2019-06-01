@@ -9,6 +9,7 @@ public class LlaveCajaMusica : MonoBehaviour
     [SerializeField] private Transform tapa;
     [SerializeField] private GameObject taza;
     [SerializeField] private GameObject UI;
+    [SerializeField] private AudioSource audioSource;
 
     private Vector3 posInit;
     private Quaternion rotInic;
@@ -22,6 +23,7 @@ public class LlaveCajaMusica : MonoBehaviour
     {
         posInit = transform.position;
         rotInic = transform.rotation;
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -44,11 +46,12 @@ public class LlaveCajaMusica : MonoBehaviour
             Destroy(UI);
         }
 
-        if (_open && _tapRotation<90)
+        if (_open && _tapRotation < 90)
         {
-            tapa.Rotate(-1,0,0);
+            tapa.Rotate(-1, 0, 0);
             _tapRotation++;
         }
+        
     }
 
     private void OnTriggerEnter(Collider other)
@@ -62,6 +65,8 @@ public class LlaveCajaMusica : MonoBehaviour
             transform.localRotation = Quaternion.Euler(rotation);
             Destroy(GetComponent<ObjectGrabber>());
             _rotate = true;
+            audioSource.Play();
+            //
         }
     }
 }

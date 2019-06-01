@@ -214,7 +214,7 @@ b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.ComportamientoObjetos
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Oculus.Platform.Samples.VrHoops.P2PNetworkBall
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.Analytics.Editor.dll:UnityEditor.Analytics.AnalyticsEventTrackerEditor
-888d41a93538363db94bd269b1845bbb Assembly-CSharp.dll:.ControladorRueda
+1eceb30ccd3728d872e0da6ad44f1db1 Assembly-CSharp.dll:.ControladorRueda
 22dc216204f0e65ce2161bd7b6ecf06b Oculus.VR.dll:.OVRScreenFade
 fe9e00068283ef13b28a703001e08184 Assembly-CSharp.dll:OculusSampleFramework.GrabManager
 32cb18cd5ad8276bea4ff86b3a04274b Assembly-CSharp.dll:OVRTouchSample.HandPose
@@ -227,11 +227,11 @@ cc10e6749eb30ec8a25405260f9836d5 Unity.Postprocessing.Runtime.dll:UnityEngine.Re
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.OVRLipSync
 d1c21148a017d1ac3191efc3213e1e8d Assembly-CSharp.dll:.DesenfoqueIluminación
 0182aac3fd8bfdeff27021b9548c3a6a Assembly-CSharp.dll:OculusSampleFramework.ColorGrabbable
-366330d36625d9e27bef61744f6ed832 Assembly-CSharp.dll:.LlaveCajaMusica
+61e0cf76bc4c2ca1812202da1705246d Assembly-CSharp.dll:.LlaveCajaMusica
 d8ea5e33d2a083136881dfd39842bcf3 Assembly-CSharp.dll:.LocomotionController
 a53651ee3996fbba20dfe0fce02f0b23 Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.AutoExposure
 a59e183d3f86325b6f381a8fc91f951c Assembly-CSharp.dll:OculusSampleFramework.DistanceGrabbable
-35e9f19f6421dd9c8ce74753dcb0f3e5 Assembly-CSharp.dll:.Linterna
+88332bdab58d242904c33c86ab435cf4 Assembly-CSharp.dll:.Linterna
 ab9b3242e7f7cea8eb7d313db01cc29d Assembly-CSharp.dll:.OVRLipSyncContextCanned
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Oculus.Platform.Samples.VrHoops.FlyText
 a4b88f3b08f1f148e04c6c3d7544c9ec Oculus.VR.dll:.OVRMonoscopic
@@ -296,6 +296,7 @@ aa82b3ce4c0c9b227036c0337315c5d3 Unity.TextMeshPro.dll:TMPro.TMP_FontAsset
 e51c09a4cc447f11db225afcd8e3e490 Unity.TextMeshPro.dll:TMPro.TMP_Settings
 a4b88f3b08f1f148e04c6c3d7544c9ec Oculus.VR.dll:.OVRChromaticAberration
 3a0fa4528690e89614a27f9b88a889c4 Oculus.VR.dll:.OVRSceneSampleController
+86ee829935d1d36714292d98c5a73ff1 Assembly-CSharp.dll:.JarronScript
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Oculus.Platform.Samples.VrHoops.PlatformManager
 737a19db869bacb007bc3ae8f3e006ab Assembly-CSharp.dll:VLB_Samples.LightGenerator
 4d6e960e3e9b5a547f0b70f0c8662275 Assembly-CSharp.dll:.Monoculo
@@ -354,7 +355,7 @@ b64df5204061416485f2c88a94a64db0 Assembly-CSharp.dll:.OVRMicInput
 e808e0575d536ea7ddf659880989784f Assembly-CSharp.dll:.GrabbingHand
 11206112ec687db2172d3c94b2bdc0f2 Oculus.VR.dll:.OVRGrabber
 b5be90544603fd5604bfcc31deb77313 Assembly-CSharp.dll:.ONSPPropagationGeometry
-6da90c41743515c356c6d89548bd4c0c Assembly-CSharp.dll:.EventsSystem
+d411fac702181d0187229ff0ba742cde Assembly-CSharp.dll:.EventsSystem
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.OvrAvatarHand
 393c59b202b0e7b6b9fee142f9310de1 Assembly-CSharp.dll:Oculus.Platform.VoipAudioSourceHiLevel
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
