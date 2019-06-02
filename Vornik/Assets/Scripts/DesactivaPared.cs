@@ -7,15 +7,15 @@ public class DesactivaPared : MonoBehaviour
     [SerializeField] private Transform puerta;
     [SerializeField] private GameObject fotoZledic;
 
-    private bool collide = false;
+    private bool _collide = false;
 
     private void OnTriggerEnter(Collider other)
     {
         var trozoTetera = other.GetComponentInChildren<TrozoTetera>();
-        if (!collide && trozoTetera != null && trozoTetera.GetHijos()==3)
+        if (!_collide && trozoTetera != null && trozoTetera.GetHijos()==3)
         {
             DisableGrabbing(other.gameObject);
-            collide = true;
+            _collide = true;
         }
     }
 

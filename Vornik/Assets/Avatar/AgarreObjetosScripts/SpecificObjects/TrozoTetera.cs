@@ -8,10 +8,10 @@ public class TrozoTetera : MonoBehaviour
 
     [SerializeField] private int identificador;
 
-    private int hijos = 0;
+    private int _hijos = 0;
     private bool _todoUnido;
-    public int GetHijos() => hijos;
-    public void SetHijos(int hijosSum) => hijos += hijosSum;
+    public int GetHijos() => _hijos;
+    public void SetHijos(int hijosSum) => _hijos += hijosSum;
     public int GetIdentificador() { return identificador; }
 
     private void OnTriggerEnter(Collider other)
@@ -23,7 +23,7 @@ public class TrozoTetera : MonoBehaviour
 
             if (!GetComponent<ObjectGrabber>().GetGrabbed() || !other.GetComponentInParent<ObjectGrabber>().GetGrabbed()) return;
             
-            other.gameObject.GetComponentInParent<TrozoTetera>().SetHijos(hijos+1);
+            other.gameObject.GetComponentInParent<TrozoTetera>().SetHijos(_hijos+1);
             GetComponent<ObjectGrabber>().Throw(transform.position,transform.position,false);
             Destroy(GetComponent<ObjectGrabber>());
             Destroy(GetComponent<Rigidbody>());
@@ -37,7 +37,7 @@ public class TrozoTetera : MonoBehaviour
             RemoveCollsionWithFingers();
         }
 
-        if (identificador == 1 && hijos == 3 && !_todoUnido)
+        if (identificador == 1 && _hijos == 3 && !_todoUnido)
         {
             Destroy(GetComponent<VLB_Samples.Rotater>());
             Destroy(GetComponent<ComportamientoObjetos>());

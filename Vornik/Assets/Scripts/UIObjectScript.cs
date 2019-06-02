@@ -7,16 +7,16 @@ public class UIObjectScript : MonoBehaviour
 {
     [SerializeField] private GameObject UI;
 
-    private ObjectGrabber objectGrabber;
+    private ObjectGrabber _objectGrabber;
 
     private void Awake()
     {
-        objectGrabber = GetComponentInParent<ObjectGrabber>();
+        _objectGrabber = GetComponentInParent<ObjectGrabber>();
     }
 
     private void Update()
     {
-        if (objectGrabber.GetGrabbed() )
+        if (_objectGrabber.GetGrabbed() )
         {
             Destroy(transform.gameObject);
 

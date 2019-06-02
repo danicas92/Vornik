@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AleatorySounds.cs" />
     <Compile Include="Assets\Avatar\AgarreObjetosScripts\AgarreMano.cs" />
     <Compile Include="Assets\Avatar\AgarreObjetosScripts\Basura\GrabbableObjects.cs" />
     <Compile Include="Assets\Avatar\AgarreObjetosScripts\Basura\GrabbingHand.cs" />

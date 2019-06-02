@@ -7,10 +7,12 @@ using SimpleVR;
 
 public class GrabbableObjects : MonoBehaviour {
 
+
+    [SerializeField] private Vector3 grabRotation;
+
     private Vector3 _initialPosition;
     private Vector3 _lastPosition;
-    [SerializeField] private Vector3 grabRotation;
-    private float MultiplyVeloc = 1.25f;//Multiplicador de la velocidad de lanzamiento
+    private float _MultiplyVeloc = 1.25f;//Multiplicador de la velocidad de lanzamiento
     private bool _isGrabbed;
     
     [SerializeField] private int KeyObject = 1;//0 = importante, 1 = objeto normal, 2 = linterna
@@ -72,7 +74,7 @@ public class GrabbableObjects : MonoBehaviour {
             transform.position = hand;
             transform.rotation = handRotation;
             Vector3 CurrentVelocity = (hand - handLastPosition) / Time.deltaTime;
-            rb.velocity = CurrentVelocity * MultiplyVeloc;
+            rb.velocity = CurrentVelocity * _MultiplyVeloc;
             rb.useGravity = true;
         }
         else if (KeyObject == 2)
@@ -88,7 +90,7 @@ public class GrabbableObjects : MonoBehaviour {
                 transform.position = hand;
                 transform.rotation = handRotation;
                 Vector3 CurrentVelocity = (hand - handLastPosition) / Time.deltaTime;
-                rb.velocity = CurrentVelocity * MultiplyVeloc;
+                rb.velocity = CurrentVelocity * _MultiplyVeloc;
                 rb.useGravity = true;
                 rb.isKinematic = false;
             }

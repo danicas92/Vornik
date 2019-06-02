@@ -7,25 +7,25 @@ public class ButtonPressed : MonoBehaviour
 
     [SerializeField] private Transform falsoFondo;
 
-    private bool active = false;
-    private float augmento = 0;
+    private bool _active = false;
+    private float _augmento = 0;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!active && other.CompareTag("Index"))
+        if (!_active && other.CompareTag("Index"))
         {
-            active = true;
+            _active = true;
         }
     }
 
     private void Update()
     {
-        if (!active) return;
+        if (!_active) return;
 
-        if (augmento < 0.4f)
+        if (_augmento < 0.4f)
         {
             falsoFondo.Translate(new Vector3(0, -0.001f, 0));
-            augmento += 0.001f;
+            _augmento += 0.001f;
         }
     }
 }

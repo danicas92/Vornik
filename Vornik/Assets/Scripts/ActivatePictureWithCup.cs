@@ -7,17 +7,17 @@ public class ActivatePictureWithCup : MonoBehaviour
     [SerializeField] private GameObject picture;
     [SerializeField] private string nameToCollide;
 
-    private bool colocado = false;
+    private bool _colocado = false;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.name == nameToCollide && !colocado)
+        if (other.name == nameToCollide && !_colocado)
         {
             var objectGrabb = other.GetComponent<ObjectGrabber>();
             objectGrabb.Throw(Vector3.zero,Vector3.zero,false);
             objectGrabb.transform.SetPositionAndRotation(transform.position, transform.rotation);
             Destroy(objectGrabb);
-            colocado = true;
+            _colocado = true;
             ActivatePicture();
         }
     }

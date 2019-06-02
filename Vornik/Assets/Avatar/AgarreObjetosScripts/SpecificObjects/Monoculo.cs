@@ -6,23 +6,23 @@ public class Monoculo : MonoBehaviour
 {
     [SerializeField] private Camera camera;
 
-    private ObjectGrabber objectGrabber;
+    private ObjectGrabber _objectGrabber;
 
     private void Awake()
     {
-        objectGrabber = GetComponent<ObjectGrabber>();
+        _objectGrabber = GetComponent<ObjectGrabber>();
     }
 
 
     private void Update()
     {
 
-        if (objectGrabber.GetGrabbed() && !camera.enabled)
+        if (_objectGrabber.GetGrabbed() && !camera.enabled)
         {
             camera.enabled = true;
             return;
         }
-        else if(!objectGrabber.GetGrabbed())
+        else if(!_objectGrabber.GetGrabbed())
         {
             camera.enabled = false;
         }

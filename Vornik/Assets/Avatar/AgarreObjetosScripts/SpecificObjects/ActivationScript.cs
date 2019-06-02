@@ -7,16 +7,16 @@ public class ActivationScript : MonoBehaviour
 
     [SerializeField] private GameObject ObjectInf;
 
-    private ObjectGrabber og;
+    private ObjectGrabber _og;
 
     private void Awake()
     {
-        og = GetComponent<ObjectGrabber>();
+        _og = GetComponent<ObjectGrabber>();
     }
 
     private void Update()
     {
-        if (og.GetGrabbed())
+        if (_og.GetGrabbed())
         {
             ObjectInf.SetActive(true);
         }

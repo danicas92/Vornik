@@ -7,71 +7,69 @@ public class StopFinger : MonoBehaviour {
     [SerializeField] private Transform indexAnt;
     [SerializeField] private string triggerButton;
     [SerializeField] private List<StopFinger> fingersAnt;
-
-    private float multiplyer;
-    private float multiplyerAnt = 0;
-    private float _maxRotacion;
-    private Vector3 rotInic;
-    private bool collisionDetected;
-    private bool otherCollided;
-
-    
-
     [SerializeField] private bool _isThumb;
+
+    private float _multiplyer;
+    private float _multiplyerAnt = 0;
+    private float _maxRotacion;
+    private Vector3 _rotInic;
+    private bool _collisionDetected;
+    private bool _otherCollided;
+
     private float _maxThumb = -0.4f;
 
     private void Awake()
     {
-        rotInic = indexAnt.transform.localRotation.eulerAngles;
+        _rotInic = indexAnt.transform.localRotation.eulerAngles;
     }
 
     private bool CheckThumb()
     {
-        if (indexAnt.transform.localRotation.eulerAngles.z < rotInic.z + 0.1f && indexAnt.transform.localRotation.eulerAngles.z > rotInic.z - 0.1f)
+        if (indexAnt.transform.localRotation.eulerAngles.z < _rotInic.z + 0.1f && indexAnt.transform.localRotation.eulerAngles.z > _rotInic.z - 0.1f)
             return false;
         return true;
     }
 
     private void Update()
     {
-        multiplyer = Input.GetAxis(triggerButton);
+        _multiplyer = Input.GetAxis(triggerButton);
         if (_isThumb)
         {
-            if (multiplyer == 1 && !collisionDetected && !otherCollided && multiplyerAnt < multiplyer)//Avanza
+            if (_multiplyer == 1 && !_collisionDetected && !_otherCollided && _multiplyerAnt < _multiplyer)//Avanza
             {
                 indexAnt.Rotate(0, 0, -0.05f * 50);
-                multiplyerAnt += 0.05f;
+                _multiplyerAnt += 0.05f;
             }
-            else if(multiplyer == 0 && multiplyerAnt> multiplyer)
+            else if(_multiplyer == 0 && _multiplyerAnt> _multiplyer)
             { 
                 indexAnt.Rotate(0, 0, 0.05f * 50);
-                multiplyerAnt -= 0.05f;
+                _multiplyerAnt -= 0.05f;
             }
         }
         else
         {
-            if (multiplyer > multiplyerAnt && _maxRotacion == 0)//Avanza
+            if (_multiplyer > _multiplyerAnt && _maxRotacion == 0)//Avanza
             {
-                if (!collisionDetected && !otherCollided)
+                if (!_collisionDetected && !_otherCollided)
                 {
-                    if (multiplyer - multiplyerAnt < 0.05f) return;
+                    if (_multiplyer - _multiplyerAnt < 0.05f) return;
                     indexAnt.Rotate(0, 0, -0.05f * 50);
-                    multiplyerAnt += 0.05f;
+                    _multiplyerAnt += 0.05f;
                 }
             }
-            else if (multiplyer < multiplyerAnt)//Retrocede
+            else if (_multiplyer < _multiplyerAnt)//Retrocede
             {
-                if ((_maxRotacion == 0 || multiplyer < _maxRotacion) /*&& indexAnt.transform.localRotation.z < rotInic.normalized.z*/)
+                if ((_maxRotacion == 0 || _multiplyer < _maxRotacion) /*&& indexAnt.transform.localRotation.z < rotInic.normalized.z*/)
                 {
-                    if (multiplyer - multiplyerAnt > -0.05f) return;
+                    if (_multiplyer - _multiplyerAnt > -0.05f) return;
                     
                     indexAnt.Rotate(0, 0, 0.05f * 50);
-                    multiplyerAnt -= 0.05f;
+                    _multiplyerAnt -= 0.05f;
                 }
             }
-            else if (multiplyer == 0)
+            else if (_multiplyer == 0)
             {
-                indexAnt.localRotation = Quaternion.Euler(rotInic);
+                indexAnt.localRotation = Quaternion.Euler(_rotInic);
             }
         }
     }
@@ -80,7 +78,7 @@ public class StopFinger : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("CollisionFingers"))
         {
-            collisionDetected = true;
+            _collisionDetected = true;
             _maxRotacion = indexAnt.transform.localRotation.z;
             StopLastFingers();
         }
@@ -90,7 +88,7 @@ public class StopFinger : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("CollisionFingers"))
         {
-            collisionDetected = false;
+            _collisionDetected = false;
             _maxRotacion = 0;
             if (_isThumb) _maxThumb = -0.4f;
             PlayLastFingers();
@@ -115,26 +113,26 @@ public class StopFinger : MonoBehaviour {
 
     public void PlayThisFinger()
     {
-        otherCollided = false;
-        collisionDetected = false;
+        _otherCollided = false;
+        _collisionDetected = false;
     }
 
     public void StopThisFinger()
     {
-        otherCollided = true;
+        _otherCollided = true;
     }
 
     public void Reset()
     {
-        multiplyerAnt = 0;
+        _multiplyerAnt = 0;
         _maxRotacion = 0;
         _maxThumb = -0.4f;
-        collisionDetected = false;
+        _collisionDetected = false;
     }
 
     public void ResetRotation()
     {
-        indexAnt.localRotation = Quaternion.Euler(rotInic);
+        indexAnt.localRotation = Quaternion.Euler(_rotInic);
         Reset();
     }
 }

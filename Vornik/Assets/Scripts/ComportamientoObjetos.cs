@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class ComportamientoObjetos : MonoBehaviour
 {
-    private ObjectGrabber scriptObjectGrabber;
-    private Rigidbody rb;
+    private ObjectGrabber _scriptObjectGrabber;
+    private Rigidbody _rb;
     private VLB_Samples.Rotater rotater;
-    private bool grabbed;
+    private bool _grabbed;
     private bool _firstInteraction = false;
 
 
     private void Awake()
     {
-        scriptObjectGrabber = GetComponent<ObjectGrabber>();
+        _scriptObjectGrabber = GetComponent<ObjectGrabber>();
         rotater = GetComponent<VLB_Samples.Rotater>();
-        rb = GetComponent<Rigidbody>();
+        _rb = GetComponent<Rigidbody>();
     }
 
     private void Update()
@@ -25,16 +25,16 @@ public class ComportamientoObjetos : MonoBehaviour
             _firstInteraction = true;
         }
 
-        grabbed = scriptObjectGrabber.GetGrabbed();
-        if (grabbed)
+        _grabbed = _scriptObjectGrabber.GetGrabbed();
+        if (_grabbed)
         {
             rotater.enabled = false;
         }
         else if(_firstInteraction)
         {
             rotater.enabled = true;
-            rb.isKinematic = true;
-            rb.useGravity = false;
+            _rb.isKinematic = true;
+            _rb.useGravity = false;
         }
     }
 }

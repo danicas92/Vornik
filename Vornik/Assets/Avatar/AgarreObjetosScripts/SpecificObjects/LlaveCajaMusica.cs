@@ -11,29 +11,29 @@ public class LlaveCajaMusica : MonoBehaviour
     [SerializeField] private GameObject UI;
     [SerializeField] private AudioSource audioSource;
 
-    private Vector3 posInit;
-    private Quaternion rotInic;
+    private Vector3 _posInit;
+    private Quaternion _rotInic;
     private bool _rotate = false;
-    private bool activate = false;
+    private bool _activate = false;
     private float _keyRotation = 0;
     private bool _open;
     private float _tapRotation = 0;
 
     private void Awake()
     {
-        posInit = transform.position;
-        rotInic = transform.rotation;
+        _posInit = transform.position;
+        _rotInic = transform.rotation;
         audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
     {
-        if (!activate && GetComponent<ObjectGrabber>().GetGrabbed())
-            activate = true;
+        if (!_activate && GetComponent<ObjectGrabber>().GetGrabbed())
+            _activate = true;
 
-        if (activate && !_rotate && !_open && transform.position != posInit && !GetComponent<ObjectGrabber>().GetGrabbed())
+        if (_activate && !_rotate && !_open && transform.position != _posInit && !GetComponent<ObjectGrabber>().GetGrabbed())
         {
-            transform.SetPositionAndRotation(posInit, rotInic);
+            transform.SetPositionAndRotation(_posInit, _rotInic);
             GetComponent<Rigidbody>().velocity = Vector3.zero;
         }
 

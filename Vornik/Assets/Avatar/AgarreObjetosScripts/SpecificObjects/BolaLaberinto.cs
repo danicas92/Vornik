@@ -8,16 +8,16 @@ public class BolaLaberinto : MonoBehaviour
     [SerializeField] private GameObject tapa;
     [SerializeField] private GameObject taza;
 
-    private Rigidbody rbBola;
-    private Vector3 positionInitial;
+    private Rigidbody _rbBola;
+    private Vector3 _positionInitial;
     private bool _haveRigidbody;
     private bool _open = false;
-    private float rotacion = 0;
+    private float _rotacion = 0;
 
     private void Awake()
     {
-        rbBola = GetComponent<Rigidbody>();
-        positionInitial = transform.localPosition;
+        _rbBola = GetComponent<Rigidbody>();
+        _positionInitial = transform.localPosition;
     }
 
     void Update()
@@ -34,7 +34,7 @@ public class BolaLaberinto : MonoBehaviour
             _haveRigidbody = false;
         }
 
-        if (_open && rotacion < 90)
+        if (_open && _rotacion < 90)
         {
             if (!taza.activeSelf)
             {
@@ -42,10 +42,10 @@ public class BolaLaberinto : MonoBehaviour
                 taza.transform.parent = null;
             }
             tapa.transform.Rotate(-1, 0, 0);
-            rotacion++;
+            _rotacion++;
 
         }
-        else if (rotacion >= 90)
+        else if (_rotacion >= 90)
         {
             Destroy(this.gameObject);
         }
@@ -69,7 +69,7 @@ public class BolaLaberinto : MonoBehaviour
     {
         if (other.CompareTag("Laberinto"))
         {
-            if (transform.localPosition != positionInitial) transform.localPosition = positionInitial;
+            if (transform.localPosition != _positionInitial) transform.localPosition = _positionInitial;
         }
     }
 }

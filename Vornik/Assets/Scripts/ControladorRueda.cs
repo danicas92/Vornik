@@ -9,23 +9,23 @@ public class ControladorRueda : MonoBehaviour
     [SerializeField] private GameObject Jarron;
     [SerializeField] private AudioSource audio;
 
-    private int contador;
+    private int _contador;
 
     public void Check()
     {
         audio.Play();
         foreach (var controlador in controladoresCandado)
         {
-            if (controlador.GetCorrent()) contador++;
+            if (controlador.GetCorrent()) _contador++;
         }
-        if (contador == 3)
+        if (_contador == 3)
         {
             transform.Rotate(new Vector3(0,0,-90));
             Matrioshka.tag = "Grab";
             Jarron.tag = "Grab";
             this.enabled = false;
         }
-        contador = 0;
+        _contador = 0;
     }
 
     private void OnDisable()
