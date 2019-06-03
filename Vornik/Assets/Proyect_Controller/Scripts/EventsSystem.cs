@@ -26,11 +26,21 @@ public class EventsSystem : MonoBehaviour
     public float max, min;
     public GameObject eventSound, apagon, door;
     bool desactiveToys = false;
+    public Material material;
+    public Texture ini, fin;
     //Lloro
     public GameObject SanjaCry,Sanja;
     //Final
     public PostProcessingControl postProcessingControl;
 
+
+    private void Start()
+    {
+        if (eventType == EventType.Aparition2)
+        {
+            material.SetTexture("_MainTex", ini);
+        }
+    }
 
     private void Update()
     {
@@ -107,6 +117,7 @@ public class EventsSystem : MonoBehaviour
 
     IEnumerator ObjectFly()
     {
+        material.SetTexture("_MainTex", fin);
         Sanja.GetComponent<Animator>().SetTrigger("Cabeza");
         SanjaCry.SetActive(false);
         door.transform.Rotate(0, 0, 85);
