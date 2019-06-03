@@ -5,7 +5,7 @@ OcclusionCullingSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_OcclusionBakeSettings:
-    smallestOccluder: 2
+    smallestOccluder: 5
     smallestHole: 0.25
     backfaceThreshold: 100
   m_SceneGUID: c4010cd84e655c949b8ee37cc93c2fc2
@@ -676,6 +676,101 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18c2b6f9d81dda54b848ddaea5a66160, type: 3}
+--- !u!1001 &38655031
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1770083766}
+    m_Modifications:
+    - target: {fileID: 4693085889093521192, guid: 24066c18a0b67d842a4919819c33fb93,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4693085889093521194, guid: 24066c18a0b67d842a4919819c33fb93,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4693085889093521196, guid: 24066c18a0b67d842a4919819c33fb93,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4693085889093521198, guid: 24066c18a0b67d842a4919819c33fb93,
+        type: 3}
+      propertyPath: m_Name
+      value: radio
+      objectReference: {fileID: 0}
+    - target: {fileID: 4693085889093521198, guid: 24066c18a0b67d842a4919819c33fb93,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4693085889093882638, guid: 24066c18a0b67d842a4919819c33fb93,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4693085889093882638, guid: 24066c18a0b67d842a4919819c33fb93,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4693085889093882638, guid: 24066c18a0b67d842a4919819c33fb93,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4693085889093882638, guid: 24066c18a0b67d842a4919819c33fb93,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4693085889093882638, guid: 24066c18a0b67d842a4919819c33fb93,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4693085889093882638, guid: 24066c18a0b67d842a4919819c33fb93,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4693085889093882638, guid: 24066c18a0b67d842a4919819c33fb93,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4693085889093882638, guid: 24066c18a0b67d842a4919819c33fb93,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 4693085889093882638, guid: 24066c18a0b67d842a4919819c33fb93,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4693085889093882638, guid: 24066c18a0b67d842a4919819c33fb93,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4693085889093882638, guid: 24066c18a0b67d842a4919819c33fb93,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24066c18a0b67d842a4919819c33fb93, type: 3}
+--- !u!4 &38655032 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4693085889093882638, guid: 24066c18a0b67d842a4919819c33fb93,
+    type: 3}
+  m_PrefabInstance: {fileID: 38655031}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &50191004 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8813109447499517985, guid: a18e05f5b64295b4980f5a6c1c8fd06f,
@@ -2474,7 +2569,7 @@ GameObject:
   m_TagString: Grab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 18
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &241194542
 Transform:
@@ -3363,7 +3458,7 @@ GameObject:
   m_TagString: Grab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 18
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &333302397
 Transform:
@@ -3739,7 +3834,7 @@ GameObject:
   m_TagString: Grab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 18
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &391856043
 Transform:
@@ -5496,7 +5591,7 @@ PrefabInstance:
     - target: {fileID: 204712642774509149, guid: a7316f996e8e773439260e5841687e6c,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 204712642774509149, guid: a7316f996e8e773439260e5841687e6c,
         type: 3}
@@ -8838,7 +8933,7 @@ GameObject:
   m_TagString: Grab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 18
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &874372321
 Transform:
@@ -9515,7 +9610,7 @@ GameObject:
   m_TagString: Grab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 18
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &978293541
 Transform:
@@ -11183,7 +11278,7 @@ GameObject:
   m_TagString: Grab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 18
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1387470791
 Transform:
@@ -12165,7 +12260,7 @@ GameObject:
   m_TagString: Grab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 18
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1544485830
 Transform:
@@ -12626,7 +12721,7 @@ GameObject:
   m_TagString: Grab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 18
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1581252381
 Transform:
@@ -14825,7 +14920,7 @@ GameObject:
   m_TagString: Grab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 18
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1763286477
 Transform:
@@ -14974,6 +15069,7 @@ Transform:
   - {fileID: 636039149}
   - {fileID: 1448367510201037367}
   - {fileID: 1799758611}
+  - {fileID: 38655032}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16108,7 +16204,7 @@ GameObject:
   m_TagString: Grab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 18
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2041425364
 Transform:
@@ -31096,7 +31192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81e51f87d74eb094ba466de7c8960c71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionMarker: {fileID: 7466637233520228143}
+  Marker: {fileID: 0}
   BodyTransforma: {fileID: 7466637233544152331}
   collisionLayers:
     serializedVersion: 2
@@ -33957,7 +34053,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -33966,22 +34062,94 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
+      value: 0.7872925
+      inSlope: -500.20065
+      outSlope: -500.20065
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.004
+      value: 0.5
+      inSlope: -125.05016
+      outSlope: -125.05016
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.008
+      value: 0.25
+      inSlope: -31.26254
+      outSlope: -31.26254
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.016
+      value: 0.125
+      inSlope: -7.815635
+      outSlope: -7.815635
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.032
+      value: 0.0625
+      inSlope: -1.9539088
+      outSlope: -1.9539088
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.064
+      value: 0.03125
+      inSlope: -0.4884772
+      outSlope: -0.4884772
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.128
+      value: 0.015625
+      inSlope: -0.1221193
+      outSlope: -0.1221193
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.256
+      value: 0.0078125
+      inSlope: -0.030529825
+      outSlope: -0.030529825
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.512
+      value: 0.00390625
+      inSlope: -0.0076324563
+      outSlope: -0.0076324563
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
       time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
+      value: 0.002
+      inSlope: -0.002000801
+      outSlope: -0.002000801
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -33990,7 +34158,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.78728867
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -34020,7 +34188,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.7872925
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -34416,7 +34584,7 @@ GameObject:
   m_TagString: CollisionFingers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 18
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!135 &8924142036778307586
 SphereCollider:
@@ -34445,7 +34613,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 18
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &8924142036778307591
 GameObject:
@@ -34464,7 +34632,7 @@ GameObject:
   m_TagString: CollisionFingers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 18
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!135 &8924142036778307592
 SphereCollider:
@@ -34496,7 +34664,7 @@ GameObject:
   m_TagString: CollisionFingers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 18
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!65 &8924142036778307602
 BoxCollider:
@@ -34528,7 +34696,7 @@ GameObject:
   m_TagString: CollisionFingers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 18
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!65 &8924142036778307604
 BoxCollider:
@@ -34560,7 +34728,7 @@ GameObject:
   m_TagString: CollisionFingers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 18
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &8924142036778307607
 GameObject:
@@ -34579,7 +34747,7 @@ GameObject:
   m_TagString: CollisionFingers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 18
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &8924142036778307609
 GameObject:
@@ -34600,7 +34768,7 @@ GameObject:
   m_TagString: CollisionFingers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 18
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!136 &8924142036778307610
 CapsuleCollider:
@@ -34635,7 +34803,7 @@ GameObject:
   m_TagString: CollisionFingers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 18
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!136 &8924142036778307612
 CapsuleCollider:
@@ -34668,7 +34836,7 @@ GameObject:
   m_TagString: CollisionFingers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 18
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!136 &8924142036778307614
 CapsuleCollider:
@@ -34703,7 +34871,7 @@ GameObject:
   m_TagString: CollisionFingers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 18
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!136 &8924142036778307616
 CapsuleCollider:
