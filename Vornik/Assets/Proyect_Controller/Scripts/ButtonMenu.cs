@@ -21,7 +21,7 @@ public class ButtonMenu : MonoBehaviour
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);//leer del archivo
                 break;
             case TypeButton.Creditos:
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);//Poner escena de créditos
+                SceneManager.LoadScene(4);//Poner escena de créditos
                 break;
             case TypeButton.Salir:
                 Application.Quit();

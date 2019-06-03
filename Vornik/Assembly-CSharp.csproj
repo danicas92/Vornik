@@ -78,6 +78,7 @@
     <Compile Include="Assets\Avatar\MovimientoScripts\MoveTeleport.cs" />
     <Compile Include="Assets\Avatar\MovimientoScripts\TeleportMovement.cs" />
     <Compile Include="Assets\Avatar\ScriptsMecanicasCabeza\AnswerWithHead.cs" />
+    <Compile Include="Assets\ControllerCredits.cs" />
     <Compile Include="Assets\Proyect_Controller\Scripts\AleatorySounds.cs" />
     <Compile Include="Assets\Proyect_Controller\Scripts\ButtonMenu.cs" />
     <Compile Include="Assets\Proyect_Controller\Scripts\Controlador\ControllerManager.cs" />
@@ -101,6 +102,7 @@
     <Compile Include="Assets\Scripts\ControladorCandado.cs" />
     <Compile Include="Assets\Scripts\ControladorRueda.cs" />
     <Compile Include="Assets\Scripts\DesactivaPared.cs" />
+    <Compile Include="Assets\Scripts\DocumentosUI.cs" />
     <Compile Include="Assets\Scripts\JarronScript.cs" />
     <Compile Include="Assets\Scripts\UIObjectScript.cs" />
     <Compile Include="Assets\Unity\Oculus\AudioManager\Scenes\Scripts\TestScript.cs" />

@@ -1,11 +1,12 @@
 Win64
 PlayerPath?
-C:/Users/d/Desktop/Nueva carpeta/Vornik.exe
+C:/Users/d/Desktop/VornikEjecutable/Vornik.exe
 SceneListBegin?
 Assets/Scenes/InterfaceIni.unity
 Assets/Scenes/Menu.unity
 Assets/Scenes/Phase_1.unity
 Assets/Scenes/Memory2.unity
+Assets/Scenes/Creditos.unity
 SceneListEnd?
 71961c90b9e05ecb48b5969e15e1c70a Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.PostProcessLayer
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.ONSPVersion
@@ -17,6 +18,7 @@ b13de7a0a457cb8e026d4237dc1b5797 Unity.Postprocessing.Runtime.dll:UnityEngine.Re
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.OvrAvatarBody
 378473cd766bacf5d5af658c64010333 Oculus.VR.dll:.OVRMixedRealityCaptureSettings
 01aa15e337e3a9c62f15153dfac6d589 Unity.TextMeshPro.dll:TMPro.TMP_Dropdown
+bbdf026ded2d89b4315ae9eca6dd2e52 Assembly-CSharp.dll:.DocumentosUI
 0c0d3eddccfa04ba0b09ec59e165e009 Oculus.VR.dll:.OVRCameraRig
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 06f0fef534ca4c1d6064fd77a26bf722 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
@@ -255,6 +257,7 @@ b849c7f43aad0d3d5d7da1600f092d8b Assembly-CSharp.dll:.ButtonInfo
 b5d01a44c9a694c6b9bce4626dd0a12e Oculus.VR.dll:.OVRGearVrControllerTest
 f06e3b2b2f9c55cfea72c954f24e54e6 Assembly-CSharp.dll:VLB_Samples.CameraToggleBeamVisibility
 82f888518833e5fa8c86e3e1a06b4a4e Assembly-CSharp.dll:OVRTouchSample.TouchController
+28b459987b8c8f3f92c3051c706c61c9 Assembly-CSharp.dll:.ControllerCredits
 c6c39ad48c140a867a97bff30ed415e8 Assembly-CSharp.dll:.GuardianBoundaryDisplay
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.TeleportOrientationHandler360
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.HandedInputSelector
@@ -348,6 +351,7 @@ d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.Spa
 8b9f42d72019bde2f9fe0667762eaff3 Assembly-CSharp.dll:.OvrAvatarSkinnedMeshRenderComponent
 9f938c9af53a5d90d2fca7d1978edc3a Assembly-CSharp.dll:.MenuRay
 6adf0680d8d7e110dab1c5470b12851b Oculus.VR.dll:.OVRLint
+0880b30b97266268dd6c5edaaf8c4f61 Assembly-CSharp.dll:.AleatorySounds
 69d94729be7bd161b1b6fcba5b2f1e2b Assembly-CSharp.dll:.SubtitleControl
 b64df5204061416485f2c88a94a64db0 Assembly-CSharp.dll:.OVRMicInput
 20acf3c1667c3fcaf430a03c1274c6e5 Assembly-CSharp.dll:Oculus.Platform.Samples.VrBoardGame.MatchmakingManager
@@ -355,7 +359,7 @@ b64df5204061416485f2c88a94a64db0 Assembly-CSharp.dll:.OVRMicInput
 e808e0575d536ea7ddf659880989784f Assembly-CSharp.dll:.GrabbingHand
 11206112ec687db2172d3c94b2bdc0f2 Oculus.VR.dll:.OVRGrabber
 b5be90544603fd5604bfcc31deb77313 Assembly-CSharp.dll:.ONSPPropagationGeometry
-d411fac702181d0187229ff0ba742cde Assembly-CSharp.dll:.EventsSystem
+682195a73644736700938fe33e4ed7ba Assembly-CSharp.dll:.EventsSystem
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.OvrAvatarHand
 393c59b202b0e7b6b9fee142f9310de1 Assembly-CSharp.dll:Oculus.Platform.VoipAudioSourceHiLevel
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
@@ -388,4 +392,3 @@ cd06391f9225499fb9ea605ab668b015 Assembly-CSharp.dll:Oculus.Platform.Samples.VrH
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.DebugUISample
 a56a51f2e505cce24d6eab45b4026f5d Assembly-CSharp.dll:.OVRVoiceModContext
 ff81c5a1b7f37c64279a7bd237dd69f0 Assembly-CSharp.dll:.GrabbableObjects
-0880b30b97266268dd6c5edaaf8c4f61 Assembly-CSharp.dll:.AleatorySounds
